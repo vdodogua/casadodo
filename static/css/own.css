@@ -1,0 +1,168 @@
+#sticky-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  z-index: 1000; /* Ensures the menu stays above other elements */
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-switcher {
+  display: flex;
+}
+
+.language-switcher a {
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.language-switcher a:hover {
+  text-decoration: underline;
+}
+
+.language-switcher a span {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Flag icon styling */
+.language-switcher a img.flag-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; /* Makes the flag circular */
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.book-now-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.book-now-button:hover {
+  background-color: darkred;
+}
+
+.actions .book-now-button {
+  padding: 20px 40px;
+  margin-left: 0px;
+}
+.action .book-now-button {
+  padding: 20px 40px;
+  margin-left: -20px;
+}
+
+.disclaimer{
+  background: #F0B800;
+  padding: 2rem 1rem 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Hide the logo */
+  .logo {
+    display: none;
+  }
+
+  .menu-container {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  /* Keep language switcher on the left */
+  .language-switcher {
+    display: flex;
+  }
+
+  .language-switcher a {
+    margin-left: 15px;
+  }
+
+  .language-switcher a:first-child {
+    margin-left: 0;
+  }
+
+  /* Keep "Book Now" button on the right */
+  .book-now-button {
+    margin-left: auto;
+  }
+
+  /* Adjust menu-right to occupy full width */
+  .menu-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ratings-section {
+    text-align: center;
+    /* margin: 40px 0; */
+    padding: 40px 0;
+}
+
+.ratings-images {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center;     /* Centers images vertically if heights vary */
+    gap: 20px;               /* Adds space between images */
+}
+
+.ratings-images img {
+    height: 100px;           /* Sets a consistent height */
+    width: auto;             /* Maintains aspect ratio */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .ratings-images {
+        flex-direction: column; /* Stacks images vertically */
+    }
+
+    .ratings-images img {
+        margin-bottom: 20px;    /* Adds space between stacked images */
+    }
+
+    .ratings-images img:last-child {
+        margin-bottom: 0;       /* Removes margin from the last image */
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.whatsapp-button img {
+  width: 100px;
+  height: 100px;
+}
+
+.innerfooter {
+  padding: .5rem;
+}

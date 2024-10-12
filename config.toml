@@ -1,0 +1,174 @@
+## -----------------------------------------------
+## Basic Configuration
+## -----------------------------------------------
+#baseURL = 'https://casadodoguatape.com/'
+languageCode = 'en-us'
+title = 'Casa Dodo Guatapé'
+theme = "hugo-story"
+copyright = "{year}"
+
+## -----------------------------------------------
+## Publish
+## -----------------------------------------------
+
+relativeURLs = "true"
+#canonifyURLs = "true"
+
+# Local
+baseURL = '/'
+publishDir = "public"
+
+
+# Add multilingual support
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+[languages]
+  [languages.en]
+    languageName = "en"
+    weight = 1
+    contentDir = "content"
+  [languages.es]
+    languageName = "es"
+    weight = 2
+    contentDir = "content"
+  [languages.fr]
+    languageName = "fr"
+    weight = 3
+    contentDir = "content"
+
+## -----------------------------------------------
+## Site Parameters
+## -----------------------------------------------
+[Params]
+  description = "Experience the beauty of Guatapé at Casa Dodo, a boutique hotel offering stunning views and exceptional service."
+  keywords = "Guatapé hotel, Casa Dodo, boutique hotel, Guatapé accommodation, Colombian hospitality"
+  #images = ["/images/casa-dodo-og.jpg"]
+  lobbyPMSBookingURL = "https://engine.lobbypms.com/casa-dodo-guatap-"
+  #plausibleAnalytics = "casadodoguatape.com"
+  logo = "images/logo.png"
+  favicon = false   
+
+  # Gallery 1 Parameters
+  [Params.gallery1]
+    id = "gallery1"
+    [[Params.gallery1.pictures]]
+      src = "/images/casadodo/201/JUA2692.jpg"
+      alt = "Description for photo 1"
+
+    [[Params.gallery1.pictures]]
+      src = "/images/casadodo/201/JUA2692.jpg"
+      alt = "Description for photo 2"
+    [[Params.gallery1.pictures]]
+      src = "/images/casadodo/201/JUA2692.jpg"
+      alt = "Description for photo 2"
+    [[Params.gallery1.pictures]]
+      src = "/images/casadodo/201/JUA2692.jpg"
+      alt = "Description for photo 2"
+    [[Params.gallery1.pictures]]
+      src = "/images/casadodo/201/JUA2692.jpg"
+      alt = "Description for photo 2"
+    [[Params.gallery1.pictures]]
+      src = "/images/casadodo/201/JUA2692.jpg"
+      alt = "Description for photo 2"
+    [[Params.gallery1.pictures]]
+      src = "/images/casadodo/201/JUA2692.jpg"
+      alt = "Description for photo 2"
+
+  # Gallery 2 Parameters
+  [Params.gallery2]
+    id = "gallery2"
+    [[Params.gallery2.pictures]]
+      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery2.pictures]]
+      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery2.pictures]]
+      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery2.pictures]]
+      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery2.pictures]]
+      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery2.pictures]]
+      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
+      alt = "Description for photo 1"
+
+  # Gallery 3 Parameters
+  [Params.gallery3]
+    id = "gallery3"
+    [[Params.gallery3.pictures]]
+      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery3.pictures]]
+      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery3.pictures]]
+      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery3.pictures]]
+      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery3.pictures]]
+      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery3.pictures]]
+      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+      alt = "Description for photo 1"
+  [Params.banner]
+    style = "style2 orient-center content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-up"
+    image = "/images/casadodo/casadodofront1280.jpg"
+  [Params.spotlight1]
+    style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+    id = "first"
+    image = "/images/casadodo/201/JUA2692.jpg"
+
+  [Params.spotlight2]
+    style = "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+    id = "second"
+    image = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
+
+  [Params.spotlight3]
+    style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+    id = "third"
+    image = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+
+  [Params.spotlight4]
+    style = "style2 orient-center content-align-left image-position-center onscroll-image-fade-in"
+    id = "about"
+    image = "/images/casadodo/casadodofront1280.jpg"
+
+  [Params.location]
+    style = "style3 orient-left content-align-center image-position-center onscroll-image-fade-in"
+    id = "location"
+    image = "" # No image needed since we'll use a map
+    address= "Casa Dodo Guatapé"
+    street= "Carrera 32 Calle 31-28"
+    city= "Guatapé, Antioquia"
+    country= "Colombia"
+    email= "casadodoguatape@gmail.com"
+    phone= "+57 313 731-7997"
+
+[Params.asset]
+  fontawesome_css = ["css/fontawesome-all.min.css"]
+  fontawesome_js = ["js/fontawesome-all.min.js"]
+  own_css = ["css/own.css"]
+
+
+
+
+
+
+
+
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+uglyURLs = false
+
+enableRobotsTXT = true
