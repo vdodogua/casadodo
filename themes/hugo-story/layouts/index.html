@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+	{{ partial "menu.html" . }}
+	{{ partial "banner.html" .Site.Params.banner }}
+	{{ partial "ratings.html" .Site.Params.ratings }}
+	{{ partial "testimonials" (dict "params" .Site.Params.testimonials1 "index" 1) }}
+
+	<!-- Update the spotlight and gallery partial calls -->
+	{{ partial "spotlight.html" (dict "params" .Site.Params.spotlight1 "index" 1) }}
+	{{ partial "gallery.html" (dict "params" .Site.Params.gallery1 "index" 1) }}
+	{{ partial "spotlight.html" (dict "params" .Site.Params.spotlight2 "index" 2) }}
+	{{ partial "gallery.html" (dict "params" .Site.Params.gallery2 "index" 2) }}
+	{{ partial "spotlight.html" (dict "params" .Site.Params.spotlight3 "index" 3) }}
+	{{ partial "gallery.html" (dict "params" .Site.Params.gallery3 "index" 3) }}
+	{{ partial "disclaimer.html" .Site.Params.disclaimer }}
+	{{ partial "items.html" . }}
+
+
+	<!-- About Section -->
+	{{ partial "spotlight.html" (dict "params" .Site.Params.spotlight4 "index" 4) }}
+
+	<!-- Location Section -->
+	<!-- {{ partial "location.html" (dict "params" .Site.Params.location "index" 1) }} -->
+	{{ partial "location.html" .Site.Params.location }}
+
+	{{ partial "testimonials" (dict "params" .Site.Params.testimonials1 "index" 2) }}
+	{{ partial "footer.html" . }}
+
+{{ end }}

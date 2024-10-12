@@ -1,0 +1,46 @@
+<head>
+	<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="{{ i18n "metaDescription" }}">
+	<meta name="keywords" content="{{ i18n "metaKeywords" }}">
+
+	<!-- Open Graph Meta Tags for Social Sharing -->
+	<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+	<meta property="og:description" content="{{ i18n "metaDescription" }}">
+	<meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.jpg">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:type" content="website">
+
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+	<meta name="twitter:description" content="{{ i18n "metaDescription" }}">
+	<meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-image.jpg">
+
+
+	<meta name="author" content="">
+	{{ if .Site.Params.favicon }}
+	{{ partial "favicon.html" . }}
+	{{ end }}
+	
+	<!-- CSS -->
+	{{ $style := resources.Get "sass/main.scss" | toCSS | minify }}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	<noscript>
+		{{ $noscript := resources.Get "sass/noscript.scss" | toCSS | minify }}
+		<link rel="stylesheet" href="{{ $noscript.RelPermalink }}">
+	</noscript>
+
+	<!-- FontAwesome CSS -->
+	{{ range .Site.Params.asset.fontawesome_css -}}
+		<link rel="stylesheet" href="{{ . | absURL }}">
+	{{- end }}
+
+	<link rel="stylesheet" href="{{ "css/own.css" | relURL }}">
+
+	<!-- hreflang Tags -->
+	{{ range .Sites }}
+		<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
+	{{ end }}
+</head>

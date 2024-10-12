@@ -1,0 +1,21 @@
+<nav id="sticky-menu">
+    <div class="menu-container">
+        <div class="logo">
+            <img src="{{ .Site.Params.logo | relURL }}" alt="Logo">
+        </div>
+        <div class="menu-right">
+            <div class="language-switcher">
+                {{ $currentLang := $.Site.Language.Lang }}
+                {{ range .Site.Languages }}
+                    {{ if ne $currentLang .Lang }}
+                        <a href="{{ printf "/%s/" .Lang }}">
+                            <img src="{{ printf "/images/flags/%s.png" .Lang | relURL }}" alt="{{ .LanguageName }} flag" class="flag-icon">
+                            <span>{{ .Lang }}</span>
+                        </a>
+                    {{ end }}
+                {{ end }}
+            </div>
+            <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
+        </div>
+    </div>
+</nav>

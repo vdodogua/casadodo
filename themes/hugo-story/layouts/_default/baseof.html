@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+	
+	{{ partial "head" . }}
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided">
+            {{- block "main" . }}{{- end }}
+		<!-- Wrapper -->
+		</div>
+		
+		{{ partial "scripts" . }}
+
+	</body>
+</html>

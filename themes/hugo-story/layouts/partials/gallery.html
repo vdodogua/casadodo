@@ -1,0 +1,12 @@
+<!-- Gallery -->
+{{ $params := .params }}
+{{ $index := .index }}
+
+<section class="wrapper {{ "style1 align-center" }}" {{ with $params.id }} id="{{ . }}"{{ end }}>
+    <!-- Gallery -->
+    <div class="gallery style2 medium lightbox onscroll-fade-in">
+        {{ range $params.pictures }}
+            {{ partial "picture.html" . }}
+        {{ end }}
+    </div>
+</section>

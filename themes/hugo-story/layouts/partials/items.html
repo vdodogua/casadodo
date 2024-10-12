@@ -1,0 +1,19 @@
+<!-- Items -->
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <h2>{{ i18n "items_title" }}</h2>
+        <div class="items style1 medium onscroll-fade-in">
+            {{ $itemCount := 3 }} <!-- Number of items -->
+            {{ range $i := seq 1 $itemCount }}
+                <section>
+                    <span class="icon style2 major fa-gem"></span> <!-- Use an appropriate icon -->
+                    <h3>{{ i18n (printf "item_%d_title" $i) }}</h3>
+                    <p>{{ i18n (printf "item_%d_description" $i) }}</p>
+                </section>
+            {{ end }}    
+        </div>
+        <ul class="action">
+            <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
+        </ul>
+    </div>
+</section>

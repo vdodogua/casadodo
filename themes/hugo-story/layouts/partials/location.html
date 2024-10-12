@@ -1,0 +1,29 @@
+
+<section class="spotlight {{ .style }}" id="{{ .id }}">
+    <div class="content">
+        <h2>{{ i18n "location_title" }}</h2>
+        <p>
+            {{ .address }}<br>
+            {{ .street }}<br>
+            {{ .city }}, 
+            {{ .country }} <br>
+            <a href="mailto:{{ .email }}">{{ .email }}</a> <br>
+            <a href="tel:{{ .phone }}">{{ .phone }}</a>
+    </p>
+        <!-- <ul class="action">
+            <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
+        </ul> -->
+    </div>
+    <div class="image">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2166726359224!2d-75.16519622369746!3d6.235144926444337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e441d96f201de65%3A0x85916046600ad870!2sCasa%20Dodo%20Guatap%C3%A9!5e0!3m2!1sen!2sco!4v1728754788494!5m2!1sen!2sco"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
