@@ -3,14 +3,15 @@
     <div class="content">
         <h2>{{ i18n "location_title" }}</h2>
         <p>
-            {{ .address }}<br>
-            {{ .street }}<br>
-            {{ .city }}, 
-            {{ .country }} <br>
-            <a href="mailto:{{ .email }}">{{ .email }}</a> <br>
-            <a href="tel:{{ .phone }}">{{ .phone }}</a>
-    </p>
-        <!-- <ul class="action">
+            <strong><i class="fas fa-map-marker-alt"></i> &nbsp; {{ .address }}</strong><br>
+            <i class="fas "></i> &nbsp;{{ .street }}<br>
+            <i class="fas "></i> &nbsp;{{ .city }}, <br>
+            <i class="fas "></i> &nbsp;{{ .country }}<br>
+        </p>
+        <p>
+            <i class="fas fa-envelope"></i>  &nbsp; <a href="mailto:{{ .email }}">{{ .email }}</a><br>
+            <i class="fas fa-phone"></i> &nbsp; <a href="tel:{{ .phone }}">{{ .phone }}</a>
+        </p>        <!-- <ul class="action">
             <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
         </ul> -->
     </div>

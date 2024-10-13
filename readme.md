@@ -12,20 +12,28 @@ different sections:
 - [x] header (logo left, right: es, fr, book now cta)
 - [x] welcome hero banner with book now cta
 - [x] reviews
-- [ ] logistics (address, location)
+- [x] logistics (address, location)
 - [x] apartments
-- [ ] about
-- [ ] contact
+- [x] about
+- [x] contact
 - [x] apartment 1 about. (main photo, description, carousel photos)
 - [x] apartment 1 gallery. (main photo, description, carousel photos)
 - [x] apartment 2 about. (main photo, description, carousel photos)
 - [x] apartment 2 gallery. (main photo, description, carousel photos)
 - [x] apartment 3 about. (main photo, description, carousel photos)
 - [x] apartment 3 gallery. (main photo, description, carousel photos)
-- [ ] footer (copyright, built with love by ramiro etc.)
+- [x] footer (copyright, built with love by ramiro etc.)
 
 i am using hugo ssg and want to use tina so that they can change some things themselves. and then host it on render. i don't expect a lot of traffic. i do want to track traffic. which analytics are currently best? 
 
 and SEO is most important. should be for people looking to visit guatape.
 
 i am using this theme https://themes.gohugo.io/themes/hugo-story/
+
+
+
+image dimensions:
+- hero banner: 1440 x 960
+- spotlight: 800 x 600
+- gallery: 1200 x 900
+- thumbnail: 600 x 450

@@ -48,100 +48,137 @@ defaultContentLanguageInSubdir = false
   logo = "images/logo.png"
   favicon = false   
 
-  # Gallery 1 Parameters
-  [Params.gallery1]
-    id = "gallery1"
-    [[Params.gallery1.pictures]]
-      src = "/images/casadodo/201/JUA2692.jpg"
-      alt = "Description for photo 1"
+  # Features icons
+  [Params.icons]
+    icon1 = "fa-home" 
+    icon2 = "fa-camera-retro"
+    icon3 = "fa-concierge-bell" 
 
-    [[Params.gallery1.pictures]]
-      src = "/images/casadodo/201/JUA2692.jpg"
-      alt = "Description for photo 2"
-    [[Params.gallery1.pictures]]
-      src = "/images/casadodo/201/JUA2692.jpg"
-      alt = "Description for photo 2"
-    [[Params.gallery1.pictures]]
-      src = "/images/casadodo/201/JUA2692.jpg"
-      alt = "Description for photo 2"
-    [[Params.gallery1.pictures]]
-      src = "/images/casadodo/201/JUA2692.jpg"
-      alt = "Description for photo 2"
-    [[Params.gallery1.pictures]]
-      src = "/images/casadodo/201/JUA2692.jpg"
-      alt = "Description for photo 2"
-    [[Params.gallery1.pictures]]
-      src = "/images/casadodo/201/JUA2692.jpg"
-      alt = "Description for photo 2"
+  
+  [Params.social]
+    instagram = "https://www.instagram.com/casadodoguatape/"
+    facebook = "https://www.facebook.com/casadodoguatape"
+
+  [Params.banner]
+    id = "banner"
+    style = "style2 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-up"
+    image = "/images/casadodo/casadodofront1440-90.jpg"
+
+  [Params.spot201]
+    style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+    id = "201"
+    image = "/images/casadodo/201/201.jpg"
+
+  [Params.spot202]
+    style = "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+    id = "202"
+    image = "/images/casadodo/202/202.jpg"
+
+  [Params.spot301]
+    style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+    id = "301"
+    image = "/images/casadodo/301/301.jpg"
+
+  # Gallery 1 Parameters
+  [Params.gallery201]
+    id = "gallery201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201room1-1200.jpg"
+      thumb = "/images/casadodo/201/201room1-600.jpg"
+      alt = "Bedroom 1 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201room0-1200.jpg"
+      thumb = "/images/casadodo/201/201room0-600.jpg"
+      alt = "Bedroom 1 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201room2-1200.jpg"
+      thumb = "/images/casadodo/201/201room2-600.jpg"
+      alt = "Bedroom 2 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201lamp1200.jpg"
+      thumb = "/images/casadodo/201/201lamp600.jpg"
+      alt = "Bedroom 2 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201bathroom1200.jpg"
+      thumb = "/images/casadodo/201/201bathroom600.jpg"
+      alt = "Bathroom 1 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201kitchen1200.jpg"
+      thumb = "/images/casadodo/201/201kitchen600.jpg"
+      alt = "Kitchen Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201decor1200.jpg"
+      thumb = "/images/casadodo/201/201decor600.jpg"
+      alt = "Decor Apartment 201"
 
   # Gallery 2 Parameters
-  [Params.gallery2]
-    id = "gallery2"
-    [[Params.gallery2.pictures]]
-      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
-      alt = "Description for photo 1"
-    [[Params.gallery2.pictures]]
-      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
-      alt = "Description for photo 1"
-    [[Params.gallery2.pictures]]
-      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
-      alt = "Description for photo 1"
-    [[Params.gallery2.pictures]]
-      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
-      alt = "Description for photo 1"
-    [[Params.gallery2.pictures]]
-      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
-      alt = "Description for photo 1"
-    [[Params.gallery2.pictures]]
-      src = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
-      alt = "Description for photo 1"
+  [Params.gallery202]
+    id = "gallery202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202room1200.jpg"
+      thumb = "/images/casadodo/202/202room600.jpg"
+      alt = "Bedroom Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202balcony1200.jpg"
+      thumb = "/images/casadodo/202/202balcony600.jpg"
+      alt = "Balcony Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202bathroom1200.jpg"
+      thumb = "/images/casadodo/202/202bathroom600.jpg"
+      alt = "Bathroom Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202kitchen1200.jpg"
+      thumb = "/images/casadodo/202/202kitchen600.jpg"
+      alt = "Kitchen Apartment 202"
 
   # Gallery 3 Parameters
-  [Params.gallery3]
-    id = "gallery3"
-    [[Params.gallery3.pictures]]
-      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+  [Params.gallery301]
+    id = "gallery301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301room1-1200.jpg"
+      thumb = "/images/casadodo/301/301room1-600.jpg"
       alt = "Description for photo 1"
-    [[Params.gallery3.pictures]]
-      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301room13-1200.jpg"
+      thumb = "/images/casadodo/301/301room13-600.jpg"
       alt = "Description for photo 1"
-    [[Params.gallery3.pictures]]
-      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301bathroom2-1200.jpg"
+      thumb = "/images/casadodo/301/301bathroom2-600.jpg"
       alt = "Description for photo 1"
-    [[Params.gallery3.pictures]]
-      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301bathroom1-1200.jpg"
+      thumb = "/images/casadodo/301/301bathroom1-600.jpg"
       alt = "Description for photo 1"
-    [[Params.gallery3.pictures]]
-      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301kitchen1-1200.jpg"
+      thumb = "/images/casadodo/301/301kitchen1-600.jpg"
       alt = "Description for photo 1"
-    [[Params.gallery3.pictures]]
-      src = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301dining1-1200.jpg"
+      thumb = "/images/casadodo/301/301dining1-600.jpg"
       alt = "Description for photo 1"
-  [Params.banner]
-    style = "style2 orient-center content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-up"
-    image = "/images/casadodo/casadodofront1280.jpg"
-  [Params.spotlight1]
-    style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-    id = "first"
-    image = "/images/casadodo/201/JUA2692.jpg"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301livingroom1-1200.jpg"
+      thumb = "/images/casadodo/301/301livingroom1-600.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301livingroom2-1200.jpg"
+      thumb = "/images/casadodo/301/301livingroom2-600.jpg"
+      alt = "Description for photo 1"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301room2-1200.jpg"
+      thumb = "/images/casadodo/301/301room2-600.jpg"
+      alt = "Description for photo 1"
 
-  [Params.spotlight2]
-    style = "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
-    id = "second"
-    image = "/images/casadodo/202/IMG_20230505_164426-scaled.jpg"
 
-  [Params.spotlight3]
-    style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-    id = "third"
-    image = "/images/casadodo/301/IMG_20230505_162420-scaled.jpg"
-
-  [Params.spotlight4]
+  [Params.about]
     style = "style2 orient-center content-align-left image-position-center onscroll-image-fade-in"
     id = "about"
-    image = "/images/casadodo/casadodofront1280.jpg"
+    image = "/images/casadodo/casadodofullcircle.jpg"
 
   [Params.location]
-    style = "style3 orient-left content-align-center image-position-center onscroll-image-fade-in"
+    style = "style5 orient-right content-align-left image-position-center onscroll-image-fade-in"
     id = "location"
     image = "" # No image needed since we'll use a map
     address= "Casa Dodo Guatapé"

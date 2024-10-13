@@ -75,11 +75,25 @@
   margin-left: -20px;
 }
 
+#banner .content{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .disclaimer{
-  background: #F0B800;
+  background: #F9D34C;
   padding: 2rem 1rem 1rem;
 }
 
+#features {
+  background-color: #F9D34C;;
+}
+#features .inner{
+  padding: 2rem 1rem 1rem;
+}
+
+#testimonials .inner{
+  width: unset;
+}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   /* Hide the logo */
@@ -136,20 +150,6 @@
     width: auto;             /* Maintains aspect ratio */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .ratings-images {
-        flex-direction: column; /* Stacks images vertically */
-    }
-
-    .ratings-images img {
-        margin-bottom: 20px;    /* Adds space between stacked images */
-    }
-
-    .ratings-images img:last-child {
-        margin-bottom: 0;       /* Removes margin from the last image */
-    }
-}
 
 .whatsapp-button {
     position: fixed;
@@ -165,4 +165,28 @@
 
 .innerfooter {
   padding: .5rem;
+}
+
+#location .content{
+  width: unset;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .ratings-images {
+      flex-direction: column; /* Stacks images vertically */
+  }
+
+  .ratings-images img {
+      margin-bottom: 20px;    /* Adds space between stacked images */
+  }
+
+  .ratings-images img:last-child {
+      margin-bottom: 0;       /* Removes margin from the last image */
+  }
+  .whatsapp-button img {
+    width: 70px;
+    height: 70px;
+  }    
 }

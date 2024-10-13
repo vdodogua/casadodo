@@ -3,10 +3,11 @@
     <div class="inner">
         <h2>{{ i18n "items_title" }}</h2>
         <div class="items style1 medium onscroll-fade-in">
+            {{ $icons := .Site.Params.icons }} <!-- Store the icons variable from config -->
             {{ $itemCount := 3 }} <!-- Number of items -->
             {{ range $i := seq 1 $itemCount }}
                 <section>
-                    <span class="icon style2 major fa-gem"></span> <!-- Use an appropriate icon -->
+                    <span class="icon style2 major {{ index $icons (printf "icon%d" $i) }}"></span>
                     <h3>{{ i18n (printf "item_%d_title" $i) }}</h3>
                     <p>{{ i18n (printf "item_%d_description" $i) }}</p>
                 </section>
