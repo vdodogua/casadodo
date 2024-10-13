@@ -83,6 +83,10 @@
   background: #F9D34C;
   padding: 2rem 1rem 1rem;
 }
+.divider{
+  background: #F9D34C;
+  padding: .5rem;
+}
 
 #features {
   background-color: #F9D34C;;
