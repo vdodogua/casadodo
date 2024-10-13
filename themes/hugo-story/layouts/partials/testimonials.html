@@ -9,7 +9,7 @@
             {{ $itemCount := $params.count | default 3 }} <!-- Default to 3 items if not specified -->
             {{ range $i := seq 1 $itemCount }}
                 <section>
-                    <span class="icon style2 major fa-quote-left"></span>
+                    <span class="icon style2 major fa-thumbs-up"></span>
                     <p>{{ i18n (printf "testimonials%d_quote_%d" $index $i) }}</p>
                     <h3>{{ i18n (printf "testimonials%d_name_%d" $index $i) }}</h3>
                 </section>
