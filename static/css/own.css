@@ -98,44 +98,6 @@
 #testimonials .inner{
   width: unset;
 }
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  /* Hide the logo */
-  .logo {
-    /* display: none; */
-  }
-
-  .menu-container {
-    /* justify-content: space-between;
-    padding: 10px 20px; */
-  }
-
-  /* Keep language switcher on the left */
-  .language-switcher {
-    /* display: flex; */
-    margin: 1rem;
-  }
-
-  .language-switcher a {
-    /* margin-left: 15px; */
-  }
-
-  .language-switcher a:first-child {
-    /* margin-left: 0; */
-  }
-
-  /* Keep "Book Now" button on the right */
-  .book-now-button {
-    margin-left: auto;
-  }
-
-  /* Adjust menu-right to occupy full width */
-  .menu-right {
-    /* flex: 1;
-    display: flex;
-    align-items: center; */
-  }
-}
 
 .ratings-section {
     text-align: center;
@@ -191,7 +153,46 @@
       margin-bottom: 0;       /* Removes margin from the last image */
   }
   .whatsapp-button img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }    
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Hide the logo */
+  .logo {
+    /* display: none; */
+  }
+
+  .menu-container {
+    /* justify-content: space-between;
+    padding: 10px 20px; */
+  }
+
+  /* Keep language switcher on the left */
+  .language-switcher {
+    /* display: flex; */
+    margin: 1rem;
+  }
+
+  .language-switcher a {
+    /* margin-left: 15px; */
+  }
+
+  .language-switcher a:first-child {
+    /* margin-left: 0; */
+  }
+
+  /* Keep "Book Now" button on the right */
+  .book-now-button {
+    margin-left: auto;
+  }
+
+  /* Adjust menu-right to occupy full width */
+  .menu-right {
+    /* flex: 1;
+    display: flex;
+    align-items: center; */
+  }
 }
