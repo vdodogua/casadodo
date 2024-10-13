@@ -48,7 +48,7 @@ defaultContentLanguageInSubdir = false
   #images = ["/images/casa-dodo-og.jpg"]
   lobbyPMSBookingURL = "https://engine.lobbypms.com/casa-dodo-guatap-"
   #plausibleAnalytics = "casadodoguatape.com"
-  logo = "images/logo.svg"
+  logo = "images/logo.png"
   favicon = false   
 
   # Features icons
@@ -178,7 +178,7 @@ defaultContentLanguageInSubdir = false
   [Params.about]
     style = "style2 orient-center content-align-left image-position-center onscroll-image-fade-in"
     id = "about"
-    image = "/images/casadodo/casadodofullcircle.jpg"
+    image = "/images/casadodo/casadodofullcircle.png"
 
   [Params.location]
     style = "style5 orient-right content-align-left image-position-center onscroll-image-fade-in"
