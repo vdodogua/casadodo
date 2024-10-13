@@ -1,5 +1,5 @@
 <head>
-	<title>{{ if .Title }}{{ .Title }} | {{ else }}{{ .Site.Title }}{{ end }}</title>
+	<title>{{ .Site.Title }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ i18n "metaDescription" }}{{ end }}">
@@ -12,6 +12,8 @@
 	<meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.jpg">
 	<meta property="og:url" content="{{ .Permalink }}">
 	<meta property="og:type" content="website">
+	<meta property="og:locale" content="{{ .Site.Language.Lang }}">
+	<meta property="og:site_name" content="{{ .Site.Title }}">
 
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -44,6 +46,9 @@
 	{{ range .Sites }}
 		<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
 	{{ end }}
+
+
+	
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",

@@ -27,14 +27,17 @@ defaultContentLanguageInSubdir = false
     languageName = "en"
     weight = 1
     contentDir = "content"
+    title = "Casa Dodo Guatapé"
   [languages.es]
     languageName = "es"
     weight = 2
     contentDir = "content"
+    title = "Casa Dodo Guatapé - Alojamiento Boutique"
   [languages.fr]
     languageName = "fr"
     weight = 3
     contentDir = "content"
+    title = "Casa Dodo Guatapé - Hébergement Boutique"
 
 ## -----------------------------------------------
 ## Site Parameters
@@ -209,3 +212,4 @@ defaultContentLanguageInSubdir = false
 uglyURLs = false
 
 enableRobotsTXT = true
+
