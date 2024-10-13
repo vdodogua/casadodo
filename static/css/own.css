@@ -98,25 +98,26 @@
 @media (max-width: 768px) {
   /* Hide the logo */
   .logo {
-    display: none;
+    /* display: none; */
   }
 
   .menu-container {
-    justify-content: space-between;
-    padding: 10px 20px;
+    /* justify-content: space-between;
+    padding: 10px 20px; */
   }
 
   /* Keep language switcher on the left */
   .language-switcher {
-    display: flex;
+    /* display: flex; */
+    margin: 1rem;
   }
 
   .language-switcher a {
-    margin-left: 15px;
+    /* margin-left: 15px; */
   }
 
   .language-switcher a:first-child {
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 
   /* Keep "Book Now" button on the right */
@@ -126,9 +127,9 @@
 
   /* Adjust menu-right to occupy full width */
   .menu-right {
-    flex: 1;
+    /* flex: 1;
     display: flex;
-    align-items: center;
+    align-items: center; */
   }
 }
 

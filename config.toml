@@ -48,7 +48,7 @@ defaultContentLanguageInSubdir = false
   #images = ["/images/casa-dodo-og.jpg"]
   lobbyPMSBookingURL = "https://engine.lobbypms.com/casa-dodo-guatap-"
   #plausibleAnalytics = "casadodoguatape.com"
-  logo = "images/logo.png"
+  logo = "images/logo.svg"
   favicon = false   
 
   # Features icons
