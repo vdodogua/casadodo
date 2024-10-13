@@ -1,9 +1,10 @@
 <head>
-	<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+	<title>{{ if .Title }}{{ .Title }} | {{ else }}{{ .Site.Title }}{{ end }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="{{ i18n "metaDescription" }}">
-	<meta name="keywords" content="{{ i18n "metaKeywords" }}">
+	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ i18n "metaDescription" }}{{ end }}">
+	<meta name="keywords" content="{{ with .Params.keywords }}{{ . }}{{ else }}{{ i18n "metaKeywords" }}{{ end }}">
+	<link rel="canonical" href="{{ .Permalink }}" />
 
 	<!-- Open Graph Meta Tags for Social Sharing -->
 	<meta property="og:title" content="{{ .Title | default .Site.Title }}">
@@ -25,7 +26,7 @@
 	{{ end }}
 	
 	<!-- CSS -->
-	{{ $style := resources.Get "sass/main.scss" | toCSS | minify }}
+	{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	<noscript>
 		{{ $noscript := resources.Get "sass/noscript.scss" | toCSS | minify }}
@@ -43,4 +44,57 @@
 	{{ range .Sites }}
 		<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
 	{{ end }}
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Hotel",
+			"name": "Casa Dodo Guatapé",
+			"url": "https://casadodoguatape.com/",
+			"logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+			"image": "{{ .Site.BaseURL }}images/og-image.jpg",
+			"description": "{{ i18n "metaDescription" | safeJS }}",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Carrera 32 Calle 31-28",
+				"addressLocality": "Guatapé",
+				"addressRegion": "Antioquia",
+				"addressCountry": "CO"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "6.2333",
+				"longitude": "-75.15"
+			},
+			"telephone": "+57 313 731-7997",
+			"priceRange": "$$",
+			"openingHours": "24/7",
+			"amenityFeature": [
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Free WiFi",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Restaurant",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Complimentary Breakfast",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Coffee",
+					"value": true
+				},
+				{
+					"@type": "LocationFeatureSpecification",
+					"name": "Kitchen Available",
+					"value": true
+				}
+			]
+		}
+	</script>
 </head>

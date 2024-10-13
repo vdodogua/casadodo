@@ -12,22 +12,3 @@
 <!-- Scripts -->
 <script src='{{ $js.RelPermalink }}'></script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Hotel",
-  "name": "Casa Dodo Guatapé",
-  "url": "https://casadodoguatape.com/",
-  "logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
-  "image": "{{ .Site.BaseURL }}images/og-image.jpg",
-  "description": "{{ i18n "metaDescription" | safeJS }}",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Your Address Here",
-    "addressLocality": "Guatapé",
-    "addressRegion": "Antioquia",
-    "addressCountry": "CO"
-  },
-  "telephone": "+57 123 4567890"
-}
-</script>
