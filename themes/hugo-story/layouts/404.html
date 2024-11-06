@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+	{{ partial "menu.html" . }}
+	{{ partial "banner.html" .Site.Params.banner }}
+	{{ partial "ratings.html" .Site.Params.ratings }}
+	{{ partial "features.html" . }}
+	{{ partial "testimonials" (dict "params" .Site.Params.testimonials1 "index" 1) }}
+
+	<!-- Update the spotlight and gallery partial calls -->
+	{{ partial "spotlight.html" (dict "params" .Site.Params.spot201 "index" 1) }}
+	{{ partial "gallery.html" (dict "params" .Site.Params.gallery201 "index" 1) }}
+	{{ partial "divider.html" . }}
+
+	{{ partial "spotlight.html" (dict "params" .Site.Params.spot202 "index" 2) }}
+	{{ partial "gallery.html" (dict "params" .Site.Params.gallery202 "index" 2) }}
+	{{ partial "divider.html" . }}
+
+	{{ partial "spotlight.html" (dict "params" .Site.Params.spot301 "index" 3) }}
+	{{ partial "gallery.html" (dict "params" .Site.Params.gallery301 "index" 3) }}
+	{{ partial "disclaimer.html" .Site.Params.disclaimer }}
+
+
+	<!-- About Section -->
+	{{ partial "spotlight.html" (dict "params" .Site.Params.about "index" 4) }}
+
+	<!-- Location Section -->
+	<!-- {{ partial "location.html" (dict "params" .Site.Params.location "index" 1) }} -->
+	{{ partial "location.html" .Site.Params.location }}
+
+	{{ partial "testimonials" (dict "params" .Site.Params.testimonials1 "index" 2) }}
+	{{ partial "blog-section.html" . }}
+	{{ partial "footer.html" . }}
+
+{{ end }}
