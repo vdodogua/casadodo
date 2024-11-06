@@ -2,8 +2,8 @@
 bookNow: "Book Now"
 bookNowLink: "https://engine.lobbypms.com/casa-dodo-guatap-?lang=EN"
 
-metaDescription: "Experience the beauty of Guatapé at Casa Dodo, a boutique hotel offering stunning views and exceptional service."
-metaKeywords: "Guatapé hotel, Casa Dodo, boutique hotel, Guatapé accommodation, Colombian hospitality"
+metaDescription: "Experience the charm of Guatapé at Casa Dodo, a centrally located boutique hotel offering modern comfort and exceptional service."
+metaKeywords: "Guatapé hotel, Casa Dodo, boutique hotel, Guatapé accommodation, Colombian hospitality, central location"
 
 # banner
 banner.title: "Style & Comfort in Guatapé"
@@ -71,3 +71,8 @@ spotlight4_content: >
 
 # location
 location_title: "Location"
+
+# Add these lines
+blog_title: "Travel Tips & Activities"
+blog_description: "Discover the best activities and local insights for your stay in Guatapé"
+blog_button: "Visit Our Travel Blog"
