@@ -25,7 +25,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 0);
 		});
 
 	// Browser fixes.
@@ -103,8 +103,8 @@
 	// Wrapper.
 		$wrapper.children()
 			.scrollex({
-				top:		'30vh',
-				bottom:		'30vh',
+				top:		'15vh',
+				bottom:		'15vh',
 				initialize:	function() {
 					$(this).addClass('is-inactive');
 				},
@@ -127,9 +127,9 @@
 	// Items.
 		$('.items')
 			.scrollex({
-				top:		'30vh',
-				bottom:		'30vh',
-				delay:		50,
+				top:		'15vh',
+				bottom:		'15vh',
+				delay:		0,
 				initialize:	function() {
 					$(this).addClass('is-inactive');
 				},
@@ -156,9 +156,9 @@
 			.wrapInner('<div class="inner"></div>')
 			.prepend(browser.mobile ? '' : '<div class="forward"></div><div class="backward"></div>')
 			.scrollex({
-				top:		'30vh',
-				bottom:		'30vh',
-				delay:		50,
+				top:		'15vh',
+				bottom:		'15vh',
+				delay:		0,
 				initialize:	function() {
 					$(this).addClass('is-inactive');
 				},

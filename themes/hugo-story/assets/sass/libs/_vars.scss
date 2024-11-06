@@ -4,18 +4,18 @@
 		overlay-opacity:	0.5,
 		lightbox-opacity:	0.75,
 		gallery-limit:		32,
-		items-limit:		16
+		items-limit:		0
 	);
 
 // Duration.
 	$duration: (
 		menu:				0.5s,
-		transition:			0.2s,
+		transition:			0.1s,
 		gallery-lightbox:	0.5s,
 		gallery-delay:		0.1s,
-		items-delay:		0.1s,
-		on-load:			0.5s,
-		on-scroll:			0.5s
+		items-delay:		0.05s,
+		on-load:			0.2s,
+		on-scroll:			0.2s
 	);
 
 // Size.
