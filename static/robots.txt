@@ -1,0 +1,14 @@
+# www.robotstxt.org
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Sitemaps
+Sitemap: https://casadodoguatape.com/sitemap.xml
+Sitemap: https://casadodoguatape.com/en/sitemap.xml
+Sitemap: https://casadodoguatape.com/es/sitemap.xml
+Sitemap: https://casadodoguatape.com/fr/sitemap.xml
+
+# Wait 1 second between successive requests
+Crawl-delay: 1

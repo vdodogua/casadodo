@@ -1,7 +1,7 @@
 ## -----------------------------------------------
 ## Basic Configuration
 ## -----------------------------------------------
-#baseURL = 'https://casadodoguatape.com/'
+baseURL = 'https://casadodoguatape.com/'
 languageCode = 'en-us'
 title = 'Casa Dodo Guatapé'
 theme = "hugo-story"
@@ -15,7 +15,7 @@ relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
-baseURL = '/'
+#baseURL = '/'
 publishDir = "public"
 
 
@@ -205,11 +205,20 @@ defaultContentLanguageInSubdir = false
 
 
 [sitemap]
-  changefreq = "weekly"
-  priority = 0.5
+  changefreq = "monthly"
   filename = "sitemap.xml"
+  priority = 0.5
 
 uglyURLs = false
 
 enableRobotsTXT = true
+
+# Add/update these sections
+disableKinds = ["taxonomy", "taxonomyTerm", "term", "RSS", "categories", "tags", "section"]
+
+[outputs]
+  home = ["HTML", "SITEMAP"]
+  page = ["HTML"]
+
+[taxonomies]
 
