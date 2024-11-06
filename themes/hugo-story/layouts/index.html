@@ -28,6 +28,7 @@
 	{{ partial "location.html" .Site.Params.location }}
 
 	{{ partial "testimonials" (dict "params" .Site.Params.testimonials1 "index" 2) }}
+	{{ partial "blog-section.html" . }}
 	{{ partial "footer.html" . }}
 
 {{ end }}
