@@ -45,6 +45,7 @@ defaultContentLanguageInSubdir = false
 [Params]
   description = "Experience the beauty of Guatapé at Casa Dodo, a boutique hotel offering stunning views and exceptional service."
   keywords = "Guatapé hotel, Casa Dodo, boutique hotel, Guatapé accommodation, Colombian hospitality"
+  blogURL = "https://guatapefreewalkingtour.com/blog/"
   #images = ["/images/casa-dodo-og.jpg"]
   lobbyPMSBookingURL = "https://engine.lobbypms.com/casa-dodo-guatap-"
   #plausibleAnalytics = "casadodoguatape.com"
