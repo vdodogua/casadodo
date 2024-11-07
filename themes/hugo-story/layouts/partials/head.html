@@ -21,12 +21,8 @@
 	<meta name="twitter:description" content="{{ i18n "metaDescription" }}">
 	<meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-image.jpg">
 
-
 	<meta name="author" content="">
-	{{ if .Site.Params.favicon }}
-	{{ partial "favicon.html" . }}
-	{{ end }}
-	
+
 	<!-- CSS -->
 	{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
@@ -102,4 +98,11 @@
 			]
 		}
 	</script>
+
+	<!-- Favicon and Theme Colors -->
+	<meta name="theme-color" content="#f9d34c">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
