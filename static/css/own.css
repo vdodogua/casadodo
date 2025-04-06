@@ -122,7 +122,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; /* Increased z-index to be higher than the widget */
+    z-index: 1100; /* Increased z-index to be higher than the widget */
 }
 
 .whatsapp-button img {
