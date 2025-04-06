@@ -202,30 +202,3 @@
         display: none;
     }
 }
-
-/* LobbyPMS Calendar Widget Styling */
-.lobby-calendar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.widget-placeholder {
-  text-align: center;
-  font-size: 1.2em;
-  color: #777;
-}
-
-#calendar {
-  background-color: #f9f9f9;
-  padding: 3rem 0;
-}
-
-@media screen and (max-width: 768px) {
-  .lobby-calendar-container {
-    padding: 1rem 0.5rem;
-  }
-}
