@@ -39,15 +39,15 @@
 	<link rel="stylesheet" href="{{ "css/own.css" | relURL }}">
 	
 	<!-- LobbyPMS Widget -->
-	<link rel="stylesheet" href="https://app.lobbypms.com/public/css/widget/lobby-date-rage-selector.min.css?v=5W20A9fUF6V6TgtkVXttwMz1W">
-	<script src="https://app.lobbypms.com/public/js/widget/lobby-date-rage-selector.min.js?v=00CLynxz7brQkHWZ2ioRb8f6E"></script>
+	<link rel="stylesheet" href="https://app.lobbypms.com/public/css/widget/lobby-date-rage-selector.min.css?v=Qg0D6AUdmG6FDKdTEFkPSzVIQ">
+	<script src="https://app.lobbypms.com/public/js/widget/lobby-date-rage-selector.min.js?v=2Q71t2sfSSopafxCqKhda5yBR"></script>
 	<script>
 		var ldrs = new LobbyDateRangeSelector({
 			apiBaseUrl: 'https://api.lobbypms.com/api/ldrs/',
 			token: 'kLFjeyHA1iHIdP2Vr5dcAloHuSzF5PEkNZGPUoEH1zGiBD6TDxKTJGnDcIbm',
-			lang: "{{ .Site.Language.Lang }}"
+			lang: '{{ .Site.Language.Lang }}',
 		});
-	</script>		
+	</script>
 
 	<!-- hreflang Tags -->
 	{{ range .Sites }}
