@@ -41,17 +41,17 @@
 	<!-- LobbyPMS Widget -->
 	<link rel="stylesheet" href="https://app.lobbypms.com/public/css/widget/lobby-date-rage-selector.min.css?v=5W20A9fUF6V6TgtkVXttwMz1W">
 	<script src="https://app.lobbypms.com/public/js/widget/lobby-date-rage-selector.min.js?v=00CLynxz7brQkHWZ2ioRb8f6E"></script>
+	<script>
+		var ldrs = new LobbyDateRangeSelector({
+			apiBaseUrl: 'https://api.lobbypms.com/api/ldrs/',
+			token: 'kLFjeyHA1iHIdP2Vr5dcAloHuSzF5PEkNZGPUoEH1zGiBD6TDxKTJGnDcIbm',
+			lang: "{{ .Site.Language.Lang }}"
+		});
+	</script>		
 
 	<!-- hreflang Tags -->
 	{{ range .Sites }}
 		<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
-		<script>
-			var ldrs = new LobbyDateRangeSelector({
-				apiBaseUrl: 'https://api.lobbypms.com/api/ldrs/',
-				token: 'kLFjeyHA1iHIdP2Vr5dcAloHuSzF5PEkNZGPUoEH1zGiBD6TDxKTJGnDcIbm',
-				lang: "{{ .Language.Lang }}"
-			});
-			</script>		
 	{{ end }}
 
 
