@@ -12,3 +12,17 @@
 <!-- Scripts -->
 <script src='{{ $js.RelPermalink }}'></script>
 
+<!-- LobbyPMS Calendar Widget -->
+<script src="https://app.lobbypms.com/public/js/widget/lobby-date-rage-selector.min.js?v=iVrRuQGr2poFAHis3qrSZxYAH"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var ldrs = new LobbyDateRangeSelector({
+            apiBaseUrl: 'https://api.lobbypms.com/api/ldrs/',
+            token: 'kLFjeyHA1iHIdP2Vr5dcAloHuSzF5PEkNZGPUoEH1zGiBD6TDxKTJGnDcIbm',
+            lang: 'es',
+            container: document.getElementById('lobby-calendar-widget')
+        });
+        console.log('LobbyPMS Calendar Widget initialized');
+    });
+</script>
+
