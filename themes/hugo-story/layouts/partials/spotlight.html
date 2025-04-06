@@ -6,9 +6,9 @@
     <div class="content">
         <h2>{{ i18n (printf "spotlight%d_title" $index) }}</h2>
         <p>{{ i18n (printf "spotlight%d_content" $index) }}</p>
-        <ul class="action">
+        <!-- <ul class="action">
             <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
-        </ul>
+        </ul> -->
     </div>
     <div class="image hide-on-mobile">
         <img src="{{ $params.image }}" alt="{{ i18n (printf "spotlight%d_title" $index) }}" />
