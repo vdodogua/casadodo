@@ -132,6 +132,7 @@
 
 .innerfooter {
   padding: .5rem;
+  padding-bottom: 5rem; /* Add bottom padding to prevent WhatsApp button overlap */
 }
 
 #location .content{
