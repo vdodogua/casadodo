@@ -38,22 +38,20 @@
 
 	<link rel="stylesheet" href="{{ "css/own.css" | relURL }}">
 	
-	<!-- LobbyPMS Date Range Selector Widget -->
-	<link rel="stylesheet" href="https://app.lobbypms.com/public/css/widget/lobby-date-range-selector.min.css?v=5W20A9fUF6V6TgtkVXttwMz1W">
-	<script src="https://app.lobbypms.com/public/js/widget/lobby-date-range-selector.min.js?v=00CLynxz7brQkHWZ2ioRb8f6E"></script>
-	<script>
-	document.addEventListener('DOMContentLoaded', function() {
-		var ldrs = new LobbyDateRangeSelector({
-			apiBaseUrl: 'https://api.lobbypms.com/api/ldrs/',
-			token: 'kLFjeyHA1iHIdP2Vr5dcAloHuSzF5PEkNZGPUoEH1zGiBD6TDxKTJGnDcIbm',
-			lang: '{{ .Site.Language.Lang }}'
-		});
-	});
-	</script>
+	<!-- LobbyPMS Widget -->
+	<link rel="stylesheet" href="https://app.lobbypms.com/public/css/widget/lobby-date-rage-selector.min.css?v=5W20A9fUF6V6TgtkVXttwMz1W">
+	<script src="https://app.lobbypms.com/public/js/widget/lobby-date-rage-selector.min.js?v=00CLynxz7brQkHWZ2ioRb8f6E"></script>
 
 	<!-- hreflang Tags -->
 	{{ range .Sites }}
 		<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
+		<script>
+			var ldrs = new LobbyDateRangeSelector({
+				apiBaseUrl: 'https://api.lobbypms.com/api/ldrs/',
+				token: 'kLFjeyHA1iHIdP2Vr5dcAloHuSzF5PEkNZGPUoEH1zGiBD6TDxKTJGnDcIbm',
+				lang: "{{ .Language.Lang }}"
+			});
+			</script>		
 	{{ end }}
 
 
