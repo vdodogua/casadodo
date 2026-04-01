@@ -72,20 +72,37 @@ defaultContentLanguageInSubdir = false
     style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
     id = "201"
     image = "/images/casadodo/201/201.bedroom2.1.jpg"
+    beds = 2
+    baths = 2
+    kitchen = true
+    outdoor = "balcony"
+    sleeps = 4
 
   [Params.spot202]
     style = "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
     id = "202"
     image = "/images/casadodo/202/202.living1.1.jpg"
+    beds = 1
+    baths = 1
+    kitchen = true
+    outdoor = "patio"
+    sleeps = 2
+    bg = "apt-alt-bg"
 
   [Params.spot301]
     style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
     id = "301"
     image = "/images/casadodo/301/301.bedroom1.1.jpg"
+    beds = 3
+    baths = 3
+    kitchen = true
+    outdoor = "balcony"
+    sleeps = 6
 
   # Gallery 1 Parameters — Apartment 201 (18 photos)
   [Params.gallery201]
     id = "gallery201"
+    mosaic = [7, 0, 9, 12, 14]
     [[Params.gallery201.pictures]]
       src = "/images/casadodo/201/201.living1.1.jpg"
       thumb = "/images/casadodo/thumbs/201.living1.1.thumb.jpg"
@@ -162,6 +179,7 @@ defaultContentLanguageInSubdir = false
   # Gallery 2 Parameters — Apartment 202 (13 photos)
   [Params.gallery202]
     id = "gallery202"
+    mosaic = [0, 2, 4, 6, 9]
     [[Params.gallery202.pictures]]
       src = "/images/casadodo/202/202.living1.1.jpg"
       thumb = "/images/casadodo/thumbs/202.living1.1.thumb.jpg"
@@ -218,6 +236,7 @@ defaultContentLanguageInSubdir = false
   # Gallery 3 Parameters — Apartment 301 (23 photos)
   [Params.gallery301]
     id = "gallery301"
+    mosaic = [3, 0, 5, 14, 17]
     [[Params.gallery301.pictures]]
       src = "/images/casadodo/301/301.living1.1.jpg"
       thumb = "/images/casadodo/thumbs/301.living1.1.thumb.jpg"

@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+{{ partial "menu" . }}
+
+<!-- Thank You Page — trilingual -->
+<section class="thank-you-page wrapper style1 align-center">
+    <div class="inner">
+        <div class="thank-you-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="thank-you-lang">
+            <h2>Thank You for Your Reservation!</h2>
+            <p class="thank-you-subtitle">We're excited to welcome you to Casa Dodo Guatapé. Your booking has been received and you'll get a confirmation email. Please check that your booking details are correct. If not, please contact us to make any changes.</p>
+            <p class="thank-you-note">Check your spam folder if you don't see our confirmation.</p>
+        </div>
+
+        <div class="thank-you-lang thank-you-lang-alt">
+            <h2>¡Gracias por su Reserva!</h2>
+            <p class="thank-you-subtitle">Estamos emocionados de darle la bienvenida a Casa Dodo Guatapé. Su reserva ha sido recibida y recibirá un correo de confirmación. Por favor verifique que los datos de su reserva sean correctos. Si no, contáctenos para realizar cualquier cambio.</p>
+            <p class="thank-you-note">Revise su carpeta de spam si no ve nuestra confirmación.</p>
+        </div>
+
+        <div class="thank-you-lang thank-you-lang-alt">
+            <h2>Merci pour Votre Réservation !</h2>
+            <p class="thank-you-subtitle">Nous avons hâte de vous accueillir à Casa Dodo Guatapé. Votre réservation a été reçue et vous recevrez un e-mail de confirmation. Veuillez vérifier que les détails de votre réservation soint corrects. Contactez-nous pour effectuer tout changement.</p>
+            <p class="thank-you-note">Vérifiez votre dossier spam si vous ne voyez pas notre confirmation.</p>
+        </div>
+
+        <div class="thank-you-contact">
+            <div class="thank-you-actions">
+                <a href="https://wa.me/573137317997" class="button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:casadodoguatape@gmail.com" class="button">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+
+        <a href="{{ .Site.Home.RelPermalink }}" class="button thank-you-home">
+            <i class="fas fa-arrow-left"></i> Casa Dodo
+        </a>
+    </div>
+</section>
+
+{{ partial "footer" . }}
+
+{{ end }}

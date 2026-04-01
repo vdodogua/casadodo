@@ -225,7 +225,7 @@
 
 				});
 
-		// Lightbox.
+		// Lightbox with navigation.
 			$('.gallery.lightbox')
 				.on('click', 'a', function(event) {
 
@@ -250,6 +250,16 @@
 					// Lock.
 						$modal[0]._locked = true;
 
+					// Build list of all image hrefs in this gallery.
+						var hrefs = [];
+						$gallery.find('a').each(function() {
+							var h = $(this).attr('href');
+							if (h && h.match(/\.(jpg|gif|png|mp4|webp|avif)$/))
+								hrefs.push(h);
+						});
+						$modal[0]._hrefs = hrefs;
+						$modal[0]._currentIndex = hrefs.indexOf(href);
+
 					// Set src.
 						$modalImg.attr('src', href);
 
@@ -270,8 +280,12 @@
 				})
 				.on('click', '.modal', function(event) {
 
+					// Clicking nav buttons should not close.
+						if ($(event.target).hasClass('modal-prev') || $(event.target).hasClass('modal-next'))
+							return;
+
 					var $modal = $(this),
-						$modalImg = $modal.find('img');
+						$modalImg = $modal.find('.inner img');
 
 					// Locked? Bail.
 						if ($modal[0]._locked)
@@ -310,7 +324,32 @@
 						}, 125);
 
 				})
-				.on('keypress', '.modal', function(event) {
+				.on('click', '.modal-prev, .modal-next', function(event) {
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					var $btn = $(this),
+						$modal = $btn.closest('.modal'),
+						$modalImg = $modal.find('.inner img'),
+						hrefs = $modal[0]._hrefs,
+						idx = $modal[0]._currentIndex;
+
+					if (!hrefs || $modal[0]._locked)
+						return;
+
+					// Calculate new index.
+						if ($btn.hasClass('modal-next'))
+							idx = (idx + 1) % hrefs.length;
+						else
+							idx = (idx - 1 + hrefs.length) % hrefs.length;
+
+					$modal[0]._currentIndex = idx;
+					$modal.removeClass('loaded');
+					$modalImg.attr('src', hrefs[idx]);
+
+				})
+				.on('keydown', '.modal', function(event) {
 
 					var $modal = $(this);
 
@@ -318,9 +357,17 @@
 						if (event.keyCode == 27)
 							$modal.trigger('click');
 
+					// Left arrow? Previous.
+						if (event.keyCode == 37)
+							$modal.find('.modal-prev').trigger('click');
+
+					// Right arrow? Next.
+						if (event.keyCode == 39)
+							$modal.find('.modal-next').trigger('click');
+
 				})
-				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
-					.find('img')
+				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div><button class="modal-prev" aria-label="Previous">&#10094;</button><button class="modal-next" aria-label="Next">&#10095;</button></div>')
+					.find('.inner img')
 						.on('load', function(event) {
 
 							var $modalImg = $(this),

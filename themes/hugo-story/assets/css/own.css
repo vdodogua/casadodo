@@ -1,0 +1,605 @@
+#sticky-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  z-index: 1000; /* Ensures the menu stays above other elements */
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-switcher {
+  display: flex;
+}
+
+.language-switcher a {
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.language-switcher a:hover {
+  text-decoration: underline;
+}
+
+.language-switcher a span {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Flag icon styling */
+.language-switcher a img.flag-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; /* Makes the flag circular */
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.book-now-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.book-now-button:hover {
+  background-color: darkred;
+}
+
+.actions .book-now-button {
+  padding: 20px 40px;
+  margin-left: 0px;
+}
+.action .book-now-button {
+  padding: 20px 40px;
+  margin-left: -20px;
+}
+
+#banner .content{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.disclaimer{
+  background: #F9D34C;
+  padding: 2rem 1rem 1rem;
+}
+.divider{
+  background: #F9D34C;
+  padding: .5rem;
+}
+
+#features {
+  background-color: #F9D34C;;
+}
+#features .inner{
+  padding: 2rem 1rem 1rem;
+}
+
+#testimonials .inner{
+  width: unset;
+}
+
+.ratings-section {
+    text-align: center;
+    /* margin: 40px 0; */
+    padding: 40px 0;
+}
+
+.ratings-images {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center;     /* Centers images vertically if heights vary */
+    gap: 20px;               /* Adds space between images */
+}
+
+.ratings-images img {
+    height: 100px;           /* Sets a consistent height */
+    width: auto;             /* Maintains aspect ratio */
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1100; /* Increased z-index to be higher than the widget */
+}
+
+.whatsapp-button img {
+  width: 100px;
+  height: 100px;
+}
+
+.innerfooter {
+  padding: .5rem;
+  padding-bottom: 5rem; /* Add bottom padding to prevent WhatsApp button overlap */
+}
+
+#location .content{
+  width: unset;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .ratings-images {
+      flex-direction: column; /* Stacks images vertically */
+  }
+
+  .ratings-images img {
+      margin-bottom: 20px;    /* Adds space between stacked images */
+  }
+
+  .ratings-images img:last-child {
+      margin-bottom: 0;       /* Removes margin from the last image */
+  }
+  .whatsapp-button img {
+    width: 50px;
+    height: 50px;
+  }    
+
+}
+/* Responsive Adjustments */
+@media (max-width: 520px) {
+  .whatsapp-button {
+    bottom: 8rem; /* Position above the booking widget */
+    right: 20px;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Hide the logo */
+  .logo {
+    /* display: none; */
+  }
+
+  .menu-container {
+    /* justify-content: space-between;
+    padding: 10px 20px; */
+  }
+
+  /* Keep language switcher on the left */
+  .language-switcher {
+    /* display: flex; */
+    margin: 1rem;
+  }
+
+  .language-switcher a {
+    /* margin-left: 15px; */
+  }
+
+  .language-switcher a:first-child {
+    /* margin-left: 0; */
+  }
+
+  /* Keep "Book Now" button on the right */
+  .book-now-button {
+    margin-left: auto;
+  }
+
+  /* Adjust menu-right to occupy full width */
+  .menu-right {
+    /* flex: 1;
+    display: flex;
+    align-items: center; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+/* =============================================
+   Text-only Spotlight (no image)
+   ============================================= */
+.spotlight.text-only .content {
+    width: 100% !important;
+    max-width: 48rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* =============================================
+   Apartment Section Spacing
+   ============================================= */
+
+/* Breathing room: gallery-mosaic to next apartment spotlight */
+.gallery-mosaic-wrapper + .spotlight.text-only {
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    position: relative;
+}
+
+/* Gallery to disclaimer breathing room */
+.gallery-mosaic-wrapper + .disclaimer {
+    margin-top: 1.5rem;
+}
+
+/* Disclaimer spacing after last apartment gallery */
+.disclaimer {
+    margin-top: 2rem;
+}
+
+/* Extra vertical space between major site sections */
+#features,
+.ratings-section {
+    margin-bottom: 1rem;
+}
+
+#location {
+    margin-top: 1rem;
+}
+
+/* =============================================
+   Apartment Alternating Background
+   ============================================= */
+.spotlight.apt-alt-bg {
+    background: #faf8f2;
+}
+
+.gallery-mosaic-wrapper.apt-alt-bg {
+    background: #faf8f2;
+}
+
+/* =============================================
+   Amenities Icons Row
+   ============================================= */
+.amenities-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.amenity {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: #555;
+    white-space: nowrap;
+}
+
+.amenity i {
+    color: #F9D34C;
+    font-size: 1rem;
+}
+
+/* =============================================
+   Gallery Mosaic Layout
+   ============================================= */
+.gallery-mosaic-wrapper {
+    padding: 0 0 2rem;
+}
+
+.gallery-mosaic {
+    padding: 0 1rem;
+}
+
+/* Hide theme's forward/backward scroll arrows on mosaic */
+.gallery.mosaic-grid > .forward,
+.gallery.mosaic-grid > .backward {
+    display: none !important;
+}
+
+/* Theme JS wraps articles in .inner — apply grid there */
+.gallery.mosaic-grid > .inner {
+    display: grid !important;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 4px;
+    border-radius: 12px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: auto;
+}
+
+.mosaic-grid .inner article {
+    overflow: hidden;
+    position: relative;
+    width: 100% !important;
+    max-width: none !important;
+    flex-grow: unset !important;
+    flex-shrink: unset !important;
+}
+
+.mosaic-grid .inner article .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mosaic-grid .inner article .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mosaic-grid .inner article:hover .image img {
+    transform: scale(1.03);
+}
+
+/* Hero: spans left column, both rows */
+.mosaic-grid .inner article.mosaic-hero {
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+/* 4 small thumbnails fill the 2×2 right side (no modal offset inside .inner) */
+.mosaic-grid .inner article:nth-child(2) { grid-row: 1; grid-column: 2; }
+.mosaic-grid .inner article:nth-child(3) { grid-row: 1; grid-column: 3; }
+.mosaic-grid .inner article:nth-child(4) { grid-row: 2; grid-column: 2; }
+.mosaic-grid .inner article:nth-child(5) { grid-row: 2; grid-column: 3; }
+
+/* "+N photos" overlay on last visible thumbnail */
+.mosaic-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-top-left-radius: 8px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Lightbox prev/next arrows */
+.gallery.lightbox .modal .modal-prev,
+.gallery.lightbox .modal .modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 4rem;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    padding: 0;
+}
+
+.gallery.lightbox .modal.loaded .modal-prev,
+.gallery.lightbox .modal.loaded .modal-next {
+    opacity: 0.7;
+}
+
+.gallery.lightbox .modal .modal-prev:hover,
+.gallery.lightbox .modal .modal-next:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.gallery.lightbox .modal .modal-prev {
+    left: 0.5rem;
+    border-radius: 4px;
+}
+
+.gallery.lightbox .modal .modal-next {
+    right: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Mobile: stack hero on top, 2×2 grid below */
+@media (max-width: 768px) {
+    .gallery.mosaic-grid > .inner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 120px 120px;
+    }
+    .mosaic-grid .inner article.mosaic-hero {
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+    .mosaic-grid .inner article:nth-child(2) { grid-row: 2; grid-column: 1; }
+    .mosaic-grid .inner article:nth-child(3) { grid-row: 2; grid-column: 2; }
+    .mosaic-grid .inner article:nth-child(4) { grid-row: 3; grid-column: 1; }
+    .mosaic-grid .inner article:nth-child(5) { grid-row: 3; grid-column: 2; }
+
+    .gallery.lightbox .modal .modal-prev,
+    .gallery.lightbox .modal .modal-next {
+        width: 2.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* =============================================
+   Directions Section
+   ============================================= */
+.directions-section {
+    padding: 3rem 1rem;
+}
+
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.direction-card {
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+.direction-card > i {
+    font-size: 1.8rem;
+    color: #F9D34C;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.direction-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.direction-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .directions-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* =============================================
+   Thank You Page
+   ============================================= */
+.thank-you-page {
+    padding-top: 6rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.thank-you-page .inner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.thank-you-icon {
+    font-size: 4rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-page h1 {
+    margin-bottom: 0.5rem;
+}
+
+.thank-you-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.thank-you-note {
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 0;
+}
+
+.thank-you-lang {
+    margin-bottom: 2rem;
+}
+
+.thank-you-lang-alt {
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.thank-you-lang:last-of-type {
+    margin-bottom: 2.5rem;
+}
+
+.thank-you-steps {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.thank-you-steps h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.thank-you-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.thank-you-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.thank-you-list li:last-child {
+    border-bottom: none;
+}
+
+.thank-you-list li i {
+    color: #F9D34C;
+    width: 1.5rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.thank-you-contact {
+    margin-bottom: 2rem;
+}
+
+.thank-you-contact p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.thank-you-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thank-you-actions .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.thank-you-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}

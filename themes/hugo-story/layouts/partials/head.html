@@ -1,10 +1,17 @@
 <head>
-	<title>{{ .Site.Title }}</title>
+	<title>{{ if .IsHome }}{{ i18n "seoTitle" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ i18n "metaDescription" }}{{ end }}">
 	<meta name="keywords" content="{{ with .Params.keywords }}{{ . }}{{ else }}{{ i18n "metaKeywords" }}{{ end }}">
 	<link rel="canonical" href="{{ .Permalink }}" />
+	{{ if .Params.noindex }}<meta name="robots" content="noindex, nofollow">{{ end }}
+
+	<!-- Geo Meta Tags for Local SEO -->
+	<meta name="geo.region" content="CO-ANT">
+	<meta name="geo.placename" content="Guatape, Antioquia">
+	<meta name="geo.position" content="6.2333;-75.15">
+	<meta name="ICBM" content="6.2333, -75.15">
 
 	<!-- Open Graph Meta Tags for Social Sharing -->
 	<meta property="og:title" content="{{ .Title | default .Site.Title }}">
@@ -36,7 +43,8 @@
 		<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
 
-	<link rel="stylesheet" href="{{ "css/own.css" | relURL }}">
+	{{ $own := resources.Get "css/own.css" | fingerprint }}
+	<link rel="stylesheet" href="{{ $own.RelPermalink }}">
 	
 	<!-- LobbyPMS Widget -->
 	<link rel="stylesheet" href="https://app.lobbypms.com/public/css/widget/lobby-date-rage-selector.min.css?v=Qg0D6AUdmG6FDKdTEFkPSzVIQ">
@@ -105,6 +113,123 @@
 					"@type": "LocationFeatureSpecification",
 					"name": "Kitchen Available",
 					"value": true
+				}
+			],
+			"containsPlace": [
+				{
+					"@type": "HotelRoom",
+					"name": "Apartment 201",
+					"description": "2-bedroom apartment with 2 bathrooms, kitchen, living area, and balcony. Sleeps 4 guests.",
+					"bed": [
+						{
+							"@type": "BedDetails",
+							"typeOfBed": "Double",
+							"numberOfBeds": 1
+						},
+						{
+							"@type": "BedDetails",
+							"typeOfBed": "Small Double (Trundle)",
+							"numberOfBeds": 1
+						}
+					],
+					"occupancy": {
+						"@type": "QuantitativeValue",
+						"value": 4
+					},
+					"amenityFeature": [
+						{ "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true },
+						{ "@type": "LocationFeatureSpecification", "name": "Balcony", "value": true },
+						{ "@type": "LocationFeatureSpecification", "name": "Private Bathroom", "value": true }
+					]
+				},
+				{
+					"@type": "HotelRoom",
+					"name": "Apartment 202",
+					"description": "1-bedroom apartment with en-suite bathroom, large kitchen with breakfast bar, and private patio. Sleeps 2 guests.",
+					"bed": [
+						{
+							"@type": "BedDetails",
+							"typeOfBed": "Double",
+							"numberOfBeds": 1
+						}
+					],
+					"occupancy": {
+						"@type": "QuantitativeValue",
+						"value": 2
+					},
+					"amenityFeature": [
+						{ "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true },
+						{ "@type": "LocationFeatureSpecification", "name": "Patio", "value": true },
+						{ "@type": "LocationFeatureSpecification", "name": "Private Bathroom", "value": true }
+					]
+				},
+				{
+					"@type": "HotelRoom",
+					"name": "Apartment 301",
+					"description": "3-bedroom apartment with 3 bathrooms, large kitchen, dining area, living and work space, and balcony. Sleeps 6 guests.",
+					"bed": [
+						{
+							"@type": "BedDetails",
+							"typeOfBed": "Double",
+							"numberOfBeds": 2
+						},
+						{
+							"@type": "BedDetails",
+							"typeOfBed": "Small Double",
+							"numberOfBeds": 1
+						}
+					],
+					"occupancy": {
+						"@type": "QuantitativeValue",
+						"value": 6
+					},
+					"amenityFeature": [
+						{ "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true },
+						{ "@type": "LocationFeatureSpecification", "name": "Balcony", "value": true },
+						{ "@type": "LocationFeatureSpecification", "name": "Private Bathroom", "value": true }
+					]
+				}
+			]
+		}
+	</script>
+
+	<!-- FAQ Structured Data -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "{{ i18n "faq_q_location" | safeJS }}",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "{{ i18n "faq_a_location" | safeJS }}"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "{{ i18n "faq_q_elevator" | safeJS }}",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "{{ i18n "faq_a_elevator" | safeJS }}"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "{{ i18n "faq_q_amenities" | safeJS }}",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "{{ i18n "faq_a_amenities" | safeJS }}"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "{{ i18n "faq_q_booking" | safeJS }}",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "{{ i18n "faq_a_booking" | safeJS }}"
+					}
 				}
 			]
 		}

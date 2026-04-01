@@ -1,16 +1,29 @@
 <!-- Spotlight -->
 {{ $params := .params }}
 {{ $index := .index }}
+{{ $textOnly := default false .textOnly }}
 
-<section class="spotlight {{ $params.style }}" id="{{ $params.id }}">
+<section class="spotlight {{ $params.style }}{{ if $textOnly }} text-only{{ end }}{{ with $params.bg }} {{ . }}{{ end }}" id="{{ $params.id }}">
     <div class="content">
         <h2>{{ i18n (printf "spotlight%d_title" $index) }}</h2>
         <p>{{ i18n (printf "spotlight%d_content" $index) }}</p>
-        <!-- <ul class="action">
-            <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
-        </ul> -->
+        {{ if $params.sleeps }}
+        <div class="amenities-row">
+            <span class="amenity"><i class="fas fa-bed"></i> {{ $params.beds }} {{ if gt $params.beds 1 }}{{ i18n "amenity_beds" }}{{ else }}{{ i18n "amenity_bed" }}{{ end }}</span>
+            <span class="amenity"><i class="fas fa-bath"></i> {{ $params.baths }} {{ if gt $params.baths 1 }}{{ i18n "amenity_baths" }}{{ else }}{{ i18n "amenity_bath" }}{{ end }}</span>
+            {{ if $params.kitchen }}<span class="amenity"><i class="fas fa-utensils"></i> {{ i18n "amenity_kitchen" }}</span>{{ end }}
+            <span class="amenity">
+                {{ if eq $params.outdoor "balcony" }}<i class="fas fa-mountain-sun"></i> {{ i18n "amenity_balcony" }}
+                {{ else if eq $params.outdoor "patio" }}<i class="fas fa-mug-hot"></i> {{ i18n "amenity_patio" }}
+                {{ end }}
+            </span>
+            <span class="amenity"><i class="fas fa-users"></i> {{ i18n "amenity_sleeps" }} {{ $params.sleeps }}</span>
+        </div>
+        {{ end }}
     </div>
+    {{ if not $textOnly }}
     <div class="image hide-on-mobile">
         <img src="{{ $params.image }}" alt="{{ i18n (printf "spotlight%d_title" $index) }}" />
     </div>
+    {{ end }}
 </section>

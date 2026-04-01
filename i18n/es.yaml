@@ -46,6 +46,16 @@ testimonials2_quote_2: "Muchas gracias por el gran espacio que han creado. Los d
 testimonials2_name_3: "Alejandro"
 testimonials2_quote_3: "Mi experiencia en este alojamiento fue maravillosa. El apartamento grande, muy bien dotado e impecable. Los anfitrones tinen muy buen gusto con la decoración, tienen en cuenta cada detalle." 
 
+# amenities
+amenity_bed: "Hab."
+amenity_beds: "Hab."
+amenity_bath: "Baño"
+amenity_baths: "Baños"
+amenity_kitchen: "Cocina"
+amenity_balcony: "Balcón"
+amenity_patio: "Patio"
+amenity_sleeps: "Huéspedes"
+
 #apartments
 spotlight1_title: "Apartamento 201"
 spotlight1_content: "Ya sea que sean una familia de cuatro o dos amigos, este apartamento es adecuado para ustedes. Cuenta con dos habitaciones y dos baños, una cocina compacta pero funcional, áreas de estar y comedor. Una habitación tiene una cama doble con baño en suite, y la otra tiene una cama nido pequeña (120 cm) con su propio baño separado. El apartamento tiene tres pequeños balcones con vistas al lago."
@@ -57,6 +67,15 @@ spotlight3_title: "Apartamento 301"
 spotlight3_content: "Con tres dormitorios y tres baños, hasta seis personas pueden quedarse cómodamente aquí. Dos dormitorios tienen una cama doble cada uno y baños en suite, el tercer dormitorio tiene una cama doble pequeña (120 cm) y su propio baño separado. Una cocina grande te permitirá preparar comidas para todos. Tiene una mesa de comedor para seis personas y una zona de estar y de trabajo. El apartamento tiene tres pequeños balcones con vistas al lago."
 
 apartments_disclaimer: "Tenga en cuenta que los apartamentos están ubicados en el segundo y tercer nivel del edificio. El acceso es solo por escaleras."
+
+# directions
+directions_title: "Cómo Llegar a Casa Dodo Guatapé"
+directions_bus_title: "En Bus desde Medellín"
+directions_bus_text: "Tome un bus desde la Terminal del Norte en Medellín hacia Guatapé (aprox. 2 horas). Los buses salen frecuentemente durante todo el día. Casa Dodo está a 5 minutos a pie de la estación de buses."
+directions_flight_title: "Por Avión"
+directions_flight_text: "Vuele al Aeropuerto Internacional José María Córdova (MDE) en Rionegro. Desde el aeropuerto, tome un taxi directo a Guatapé (aprox. 1.5 horas). Podemos organizarlo para usted."
+directions_taxi_title: "Transporte Privado"
+directions_taxi_text: "Podemos organizar transporte privado desde Medellín o directamente desde el aeropuerto. Contáctenos por WhatsApp para reservar su traslado y nos encargamos de todo."
 
 # about
 spotlight4_title: "Sobre nosotros"
@@ -76,3 +95,23 @@ location_title: "Ubicación"
 blog_title: "Consejos de Viaje y Actividades Locales"
 blog_description: "Descubre Guatapé a través de los ojos de Astrid, guía local de Guatapé Free Walking Tour"
 blog_button: "Visita el Blog de Astrid"
+
+# thank you page
+thankYou_title: "¡Gracias por su Reserva!"
+thankYou_subtitle: "Estamos emocionados de darle la bienvenida a Casa Dodo Guatapé. Su reserva ha sido recibida y recibirá un correo de confirmación. Por favor verifique que los datos de su reserva sean correctos. Si no, contáctenos para realizar cualquier cambio."
+thankYou_checkSpam: "Revise su carpeta de spam si no ve nuestra confirmación."
+thankYou_questions: "¿Tiene preguntas? Contáctenos en cualquier momento:"
+thankYou_backHome: "Volver a Casa Dodo"
+
+# SEO
+seoTitle: "Casa Dodo Guatape — Hotel Boutique y Apartamentos"
+
+# FAQ Schema
+faq_q_location: "Donde queda Casa Dodo?"
+faq_a_location: "Casa Dodo esta ubicado en el centro de Guatape, en la Carrera 32 Calle 31-28, a pocos pasos de la plaza principal y los zocalos."
+faq_q_elevator: "Hay acceso por ascensor?"
+faq_a_elevator: "No, los apartamentos estan en el segundo y tercer piso y el acceso es unicamente por escaleras."
+faq_q_amenities: "Que comodidades estan incluidas?"
+faq_a_amenities: "Todas las estadias incluyen WiFi gratis, desayuno de cortesia, cocinas totalmente equipadas y articulos de bano de calidad."
+faq_q_booking: "Como puedo reservar?"
+faq_a_booking: "Puede reservar directamente a traves de nuestro sitio web o contactarnos por WhatsApp al +57 313 731-7997."

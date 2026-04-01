@@ -30,10 +30,10 @@ testimonials1_name_1: "Patrick"
 testimonials1_quote_1: "Valery est une hôtesse formidable. Son logement est irréprochable. Propre et vraiment très bien situé. Tout était tout simplement parfait. A réserver."
 
 testimonials1_name_2: "La famille Belley et Roy-Ascanio"
-testimonials1_quote_2: "Merci Valery pour le magnifique séjour. Casa Dodo est un endroit sympa, chaleureux et très confortable. Nous allons revenir sans doute." 
+testimonials1_quote_2: "Merci Valery pour le magnifique séjour. Casa Dodo est un endroit sympa, chaleureux et très confortable. Nous allons revenir sans doute."
 
 testimonials1_name_3: "Steeve"
-testimonials1_quote_3: "Appartement très propre et avec tout le nécessaire pour passer un bon séjour. Suffisamment d’espace pour cuisiner et appartement bien aménagé." 
+testimonials1_quote_3: "Appartement très propre et avec tout le nécessaire pour passer un bon séjour. Suffisamment d’espace pour cuisiner et appartement bien aménagé."
 
 # reviews
 testimonials2_name_1: "Dieynabel"
@@ -44,6 +44,16 @@ testimonials2_quote_2: "Cet appartement fût le meilleur de notre séjour de 5 s
 
 testimonials2_name_3: "Antoinette"
 testimonials2_quote_3: "Merci pour votre accueil et vos conseils. J’ai passé un court mais très bon moment chez vous"
+
+# amenities
+amenity_bed: "Chambre"
+amenity_beds: "Chambres"
+amenity_bath: "SdB"
+amenity_baths: "SdB"
+amenity_kitchen: "Cuisine"
+amenity_balcony: "Balcon"
+amenity_patio: "Patio"
+amenity_sleeps: "Capacité"
 
 #apartments
 spotlight1_title: "Appartement 201"
@@ -57,6 +67,15 @@ spotlight3_content: "Avec trois chambres et trois salles de bain, jusqu'à six p
 
 apartments_disclaimer: "Veuillez noter que les appartements sont situés aux deuxième et troisième niveaux du bâtiment. L'accès se fait uniquement par les escaliers."
 
+# directions
+directions_title: "Comment Arriver à Casa Dodo Guatapé"
+directions_bus_title: "En Bus depuis Medellín"
+directions_bus_text: "Prenez un bus depuis le Terminal del Norte à Medellín vers Guatapé (environ 2 heures). Les bus partent fréquemment tout au long de la journée. Casa Dodo est à 5 minutes à pied de la gare routière."
+directions_flight_title: "Par Avion"
+directions_flight_text: "Atterrissez à l'aéroport international José María Córdova (MDE) à Rionegro. Depuis l'aéroport, prenez un taxi direct jusqu'à Guatapé (environ 1h30). Nous pouvons l'organiser pour vous."
+directions_taxi_title: "Transport Privé"
+directions_taxi_text: "Nous pouvons organiser un transport privé depuis Medellín ou directement depuis l'aéroport. Contactez-nous par WhatsApp pour réserver votre transfert et nous nous occupons de tout."
+
 # about
 spotlight4_title: "À propos de nous"
 spotlight4_content: >
@@ -65,7 +84,7 @@ spotlight4_content: >
   Le nom vient de :
   (1) L'oiseau natif et éteint de l'île Maurice et
   (2) Du mot "dodo", une forme abrégée du verbe français "dormir" qui signifie dormir.
-  
+
   Nous avons 3 appartements dans le bâtiment, pouvant accueillir 2, 4 et 6 invités. Nous avons acheté le bâtiment en 2017 et avons commencé les rénovations un an plus tard. Nous avons accueilli nos premiers invités en décembre 2019. Notre objectif est d'offrir un hébergement à la fois fonctionnel et élégant où vous pourrez vous détendre tout en profitant du village que nous aimons. Nous nous efforçons d'offrir le confort d'un hôtel avec l'espace et les commodités supplémentaires qu'une maison peut offrir.
 
 # location
@@ -75,3 +94,23 @@ location_title: "Emplacement"
 blog_title: "Conseils de Voyage & Activités Locales"
 blog_description: "Découvrez Guatapé à travers les yeux d'Astrid, guide locale de Guatapé Free Walking Tour"
 blog_button: "Visitez le Blog d'Astrid"
+
+# thank you page
+thankYou_title: "Merci pour Votre Réservation !"
+thankYou_subtitle: "Nous avons hâte de vous accueillir à Casa Dodo Guatapé. Votre réservation a été reçue et vous recevrez un e-mail de confirmation. Veuillez vérifier que les détails de votre réservation soint corrects. Contactez-nous pour effectuer tout changement."
+thankYou_checkSpam: "Vérifiez votre dossier spam si vous ne voyez pas notre confirmation."
+thankYou_questions: "Des questions ? Contactez-nous à tout moment :"
+thankYou_backHome: "Retour à Casa Dodo"
+
+# SEO
+seoTitle: "Casa Dodo Guatape — Hotel Boutique et Appartements"
+
+# FAQ Schema
+faq_q_location: "Ou se trouve Casa Dodo ?"
+faq_a_location: "Casa Dodo est situe au centre de Guatape, Carrera 32 Calle 31-28, a quelques pas de la place principale et des zocalos."
+faq_q_elevator: "Y a-t-il un ascenseur ?"
+faq_a_elevator: "Non, les appartements sont aux 2e et 3e etages et l'acces se fait uniquement par les escaliers."
+faq_q_amenities: "Quelles commodites sont incluses ?"
+faq_a_amenities: "Tous les sejours comprennent le WiFi gratuit, le petit-dejeuner offert, des cuisines entierement equipees et des articles de salle de bain de qualite."
+faq_q_booking: "Comment puis-je reserver ?"
+faq_a_booking: "Vous pouvez reserver directement sur notre site web ou nous contacter via WhatsApp au +57 313 731-7997."
