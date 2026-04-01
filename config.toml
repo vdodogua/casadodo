@@ -71,109 +71,245 @@ defaultContentLanguageInSubdir = false
   [Params.spot201]
     style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
     id = "201"
-    image = "/images/casadodo/201/201.jpg"
+    image = "/images/casadodo/201/201.bedroom2.1.jpg"
 
   [Params.spot202]
     style = "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
     id = "202"
-    image = "/images/casadodo/202/202.jpg"
+    image = "/images/casadodo/202/202.living1.1.jpg"
 
   [Params.spot301]
     style = "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
     id = "301"
-    image = "/images/casadodo/301/301.jpg"
+    image = "/images/casadodo/301/301.bedroom1.1.jpg"
 
-  # Gallery 1 Parameters
+  # Gallery 1 Parameters — Apartment 201 (18 photos)
   [Params.gallery201]
     id = "gallery201"
     [[Params.gallery201.pictures]]
-      src = "/images/casadodo/201/201room1-1200.jpg"
-      thumb = "/images/casadodo/201/201room1-600.jpg"
+      src = "/images/casadodo/201/201.living1.1.jpg"
+      thumb = "/images/casadodo/thumbs/201.living1.1.thumb.jpg"
+      alt = "Living Room Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.living1.2.jpg"
+      thumb = "/images/casadodo/thumbs/201.living1.2.thumb.jpg"
+      alt = "Living Room Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.living1.3.jpg"
+      thumb = "/images/casadodo/thumbs/201.living1.3.thumb.jpg"
+      alt = "Living Room Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.living1.4.jpg"
+      thumb = "/images/casadodo/thumbs/201.living1.4.thumb.jpg"
+      alt = "Living Room Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.living1.5.jpg"
+      thumb = "/images/casadodo/thumbs/201.living1.5.thumb.jpg"
+      alt = "Living Room Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.bedroom1.1.jpg"
+      thumb = "/images/casadodo/thumbs/201.bedroom1.1.thumb.jpg"
       alt = "Bedroom 1 Apartment 201"
     [[Params.gallery201.pictures]]
-      src = "/images/casadodo/201/201room0-1200.jpg"
-      thumb = "/images/casadodo/201/201room0-600.jpg"
+      src = "/images/casadodo/201/201.bedroom1.2.jpg"
+      thumb = "/images/casadodo/thumbs/201.bedroom1.2.thumb.jpg"
       alt = "Bedroom 1 Apartment 201"
     [[Params.gallery201.pictures]]
-      src = "/images/casadodo/201/201room2-1200.jpg"
-      thumb = "/images/casadodo/201/201room2-600.jpg"
+      src = "/images/casadodo/201/201.bedroom2.1.jpg"
+      thumb = "/images/casadodo/thumbs/201.bedroom2.1.thumb.jpg"
       alt = "Bedroom 2 Apartment 201"
     [[Params.gallery201.pictures]]
-      src = "/images/casadodo/201/201lamp1200.jpg"
-      thumb = "/images/casadodo/201/201lamp600.jpg"
+      src = "/images/casadodo/201/201.bedroom2.2.jpg"
+      thumb = "/images/casadodo/thumbs/201.bedroom2.2.thumb.jpg"
       alt = "Bedroom 2 Apartment 201"
     [[Params.gallery201.pictures]]
-      src = "/images/casadodo/201/201bathroom1200.jpg"
-      thumb = "/images/casadodo/201/201bathroom600.jpg"
-      alt = "Bathroom 1 Apartment 201"
+      src = "/images/casadodo/201/201.bedroom2.3.jpg"
+      thumb = "/images/casadodo/thumbs/201.bedroom2.3.thumb.jpg"
+      alt = "Bedroom 2 Apartment 201"
     [[Params.gallery201.pictures]]
-      src = "/images/casadodo/201/201kitchen1200.jpg"
-      thumb = "/images/casadodo/201/201kitchen600.jpg"
+      src = "/images/casadodo/201/201.bedroom2.4.jpg"
+      thumb = "/images/casadodo/thumbs/201.bedroom2.4.thumb.jpg"
+      alt = "Bedroom 2 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.dining1.1.jpg"
+      thumb = "/images/casadodo/thumbs/201.dining1.1.thumb.jpg"
+      alt = "Dining Room Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.kitchen1.1.jpg"
+      thumb = "/images/casadodo/thumbs/201.kitchen1.1.thumb.jpg"
       alt = "Kitchen Apartment 201"
     [[Params.gallery201.pictures]]
-      src = "/images/casadodo/201/201decor1200.jpg"
-      thumb = "/images/casadodo/201/201decor600.jpg"
-      alt = "Decor Apartment 201"
+      src = "/images/casadodo/201/201.kitchen1.2.jpg"
+      thumb = "/images/casadodo/thumbs/201.kitchen1.2.thumb.jpg"
+      alt = "Kitchen Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.bathroom1.1.jpg"
+      thumb = "/images/casadodo/thumbs/201.bathroom1.1.thumb.jpg"
+      alt = "Bathroom 1 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.bathroom1.2.jpg"
+      thumb = "/images/casadodo/thumbs/201.bathroom1.2.thumb.jpg"
+      alt = "Bathroom 1 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.bathroom2.1.jpg"
+      thumb = "/images/casadodo/thumbs/201.bathroom2.1.thumb.jpg"
+      alt = "Bathroom 2 Apartment 201"
+    [[Params.gallery201.pictures]]
+      src = "/images/casadodo/201/201.bathroom2.2.jpg"
+      thumb = "/images/casadodo/thumbs/201.bathroom2.2.thumb.jpg"
+      alt = "Bathroom 2 Apartment 201"
 
-  # Gallery 2 Parameters
+  # Gallery 2 Parameters — Apartment 202 (13 photos)
   [Params.gallery202]
     id = "gallery202"
     [[Params.gallery202.pictures]]
-      src = "/images/casadodo/202/202room1200.jpg"
-      thumb = "/images/casadodo/202/202room600.jpg"
+      src = "/images/casadodo/202/202.living1.1.jpg"
+      thumb = "/images/casadodo/thumbs/202.living1.1.thumb.jpg"
+      alt = "Living Room Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.living1.2.jpg"
+      thumb = "/images/casadodo/thumbs/202.living1.2.thumb.jpg"
+      alt = "Living Room Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.bedroom1.1.jpg"
+      thumb = "/images/casadodo/thumbs/202.bedroom1.1.thumb.jpg"
       alt = "Bedroom Apartment 202"
     [[Params.gallery202.pictures]]
-      src = "/images/casadodo/202/202balcony1200.jpg"
-      thumb = "/images/casadodo/202/202balcony600.jpg"
-      alt = "Balcony Apartment 202"
+      src = "/images/casadodo/202/202.bedroom1.2.jpg"
+      thumb = "/images/casadodo/thumbs/202.bedroom1.2.thumb.jpg"
+      alt = "Bedroom Apartment 202"
     [[Params.gallery202.pictures]]
-      src = "/images/casadodo/202/202bathroom1200.jpg"
-      thumb = "/images/casadodo/202/202bathroom600.jpg"
+      src = "/images/casadodo/202/202.bedroom1.3.jpg"
+      thumb = "/images/casadodo/thumbs/202.bedroom1.3.thumb.jpg"
+      alt = "Bedroom Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.bedroom1.4.jpg"
+      thumb = "/images/casadodo/thumbs/202.bedroom1.4.thumb.jpg"
+      alt = "Bedroom Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.kitchen1.1.jpg"
+      thumb = "/images/casadodo/thumbs/202.kitchen1.1.thumb.jpg"
+      alt = "Kitchen Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.kitchen1.2.jpg"
+      thumb = "/images/casadodo/thumbs/202.kitchen1.2.thumb.jpg"
+      alt = "Kitchen Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.kitchen1.3.jpg"
+      thumb = "/images/casadodo/thumbs/202.kitchen1.3.thumb.jpg"
+      alt = "Kitchen Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.bathroom1.1.jpg"
+      thumb = "/images/casadodo/thumbs/202.bathroom1.1.thumb.jpg"
       alt = "Bathroom Apartment 202"
     [[Params.gallery202.pictures]]
-      src = "/images/casadodo/202/202kitchen1200.jpg"
-      thumb = "/images/casadodo/202/202kitchen600.jpg"
-      alt = "Kitchen Apartment 202"
+      src = "/images/casadodo/202/202.bathroom1.2.jpg"
+      thumb = "/images/casadodo/thumbs/202.bathroom1.2.thumb.jpg"
+      alt = "Bathroom Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.bathroom1.3.jpg"
+      thumb = "/images/casadodo/thumbs/202.bathroom1.3.thumb.jpg"
+      alt = "Bathroom Apartment 202"
+    [[Params.gallery202.pictures]]
+      src = "/images/casadodo/202/202.bathroom1.4.jpg"
+      thumb = "/images/casadodo/thumbs/202.bathroom1.4.thumb.jpg"
+      alt = "Bathroom Apartment 202"
 
-  # Gallery 3 Parameters
+  # Gallery 3 Parameters — Apartment 301 (23 photos)
   [Params.gallery301]
     id = "gallery301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301room1-1200.jpg"
-      thumb = "/images/casadodo/301/301room1-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.living1.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.living1.1.thumb.jpg"
+      alt = "Living Room Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301room13-1200.jpg"
-      thumb = "/images/casadodo/301/301room13-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.living1.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.living1.2.thumb.jpg"
+      alt = "Living Room Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301bathroom2-1200.jpg"
-      thumb = "/images/casadodo/301/301bathroom2-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.living1.3.jpg"
+      thumb = "/images/casadodo/thumbs/301.living1.3.thumb.jpg"
+      alt = "Living Room Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301bathroom1-1200.jpg"
-      thumb = "/images/casadodo/301/301bathroom1-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.bedroom1.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom1.1.thumb.jpg"
+      alt = "Bedroom 1 Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301kitchen1-1200.jpg"
-      thumb = "/images/casadodo/301/301kitchen1-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.bedroom1.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom1.2.thumb.jpg"
+      alt = "Bedroom 1 Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301dining1-1200.jpg"
-      thumb = "/images/casadodo/301/301dining1-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.bedroom2.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom2.1.thumb.jpg"
+      alt = "Bedroom 2 Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301livingroom1-1200.jpg"
-      thumb = "/images/casadodo/301/301livingroom1-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.bedroom2.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom2.2.thumb.jpg"
+      alt = "Bedroom 2 Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301livingroom2-1200.jpg"
-      thumb = "/images/casadodo/301/301livingroom2-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.bedroom2.3.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom2.3.thumb.jpg"
+      alt = "Bedroom 2 Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301room2-1200.jpg"
-      thumb = "/images/casadodo/301/301room2-600.jpg"
-      alt = "Description for photo 1"
+      src = "/images/casadodo/301/301.bedroom2.4.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom2.4.thumb.jpg"
+      alt = "Bedroom 2 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bedroom3.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom3.1.thumb.jpg"
+      alt = "Bedroom 3 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bedroom3.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom3.2.thumb.jpg"
+      alt = "Bedroom 3 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bedroom3.3.jpg"
+      thumb = "/images/casadodo/thumbs/301.bedroom3.3.thumb.jpg"
+      alt = "Bedroom 3 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.dining1.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.dining1.1.thumb.jpg"
+      alt = "Dining Room Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.dining1.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.dining1.2.thumb.jpg"
+      alt = "Dining Room Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.kitchen1.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.kitchen1.2.thumb.jpg"
+      alt = "Kitchen Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.kitchen1.3.jpg"
+      thumb = "/images/casadodo/thumbs/301.kitchen1.3.thumb.jpg"
+      alt = "Kitchen Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.kitchen1.4.jpg"
+      thumb = "/images/casadodo/thumbs/301.kitchen1.4.thumb.jpg"
+      alt = "Kitchen Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bathroom1.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.bathroom1.1.thumb.jpg"
+      alt = "Bathroom 1 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bathroom2.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.bathroom2.1.thumb.jpg"
+      alt = "Bathroom 2 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bathroom2.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.bathroom2.2.thumb.jpg"
+      alt = "Bathroom 2 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bathroom3.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.bathroom3.1.thumb.jpg"
+      alt = "Bathroom 3 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.bathoom3.2.jpg"
+      thumb = "/images/casadodo/thumbs/301.bathroom3.2.thumb.jpg"
+      alt = "Bathroom 3 Apartment 301"
+    [[Params.gallery301.pictures]]
+      src = "/images/casadodo/301/301.office1.1.jpg"
+      thumb = "/images/casadodo/thumbs/301.office1.1.thumb.jpg"
+      alt = "Office Apartment 301"
 
 
   [Params.about]

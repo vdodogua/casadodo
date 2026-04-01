@@ -1,6 +1,6 @@
 <article>
-    <a href="{{ .src | absURL }}" class="image">
-        <img src="{{ .thumb | absURL }}" alt="{{ .alt }}" />
+    <a href="{{ .src | relURL }}" class="image">
+        <img src="{{ .thumb | relURL }}" alt="{{ .alt }}" />
     </a>
     <!-- <div class="caption">
         <h3>{{ .title }}</h3>
