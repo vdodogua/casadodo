@@ -3,7 +3,7 @@
 {{ $index := .index }}
 {{ $textOnly := default false .textOnly }}
 
-<section class="spotlight {{ $params.style }}{{ if $textOnly }} text-only{{ end }}{{ with $params.bg }} {{ . }}{{ end }}" id="{{ $params.id }}">
+<section class="spotlight {{ $params.style }}{{ if $textOnly }} text-only{{ end }}{{ with $params.bg }} {{ . }}{{ end }}" id="{{ if $params.sleeps }}apartment-{{ $params.id }}{{ else }}{{ $params.id }}{{ end }}">
     <div class="content">
         <h2>{{ i18n (printf "spotlight%d_title" $index) }}</h2>
         <p>{{ i18n (printf "spotlight%d_content" $index) }}</p>
@@ -23,7 +23,7 @@
     </div>
     {{ if not $textOnly }}
     <div class="image hide-on-mobile">
-        <img src="{{ $params.image }}" alt="{{ i18n (printf "spotlight%d_title" $index) }}" />
+        <img src="{{ $params.image }}" alt="{{ i18n (printf "spotlight%d_alt" $index) | default (i18n (printf "spotlight%d_title" $index)) }}" loading="lazy" />
     </div>
     {{ end }}
 </section>

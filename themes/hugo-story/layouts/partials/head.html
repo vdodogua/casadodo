@@ -10,25 +10,37 @@
 	<!-- Geo Meta Tags for Local SEO -->
 	<meta name="geo.region" content="CO-ANT">
 	<meta name="geo.placename" content="Guatape, Antioquia">
-	<meta name="geo.position" content="6.2333;-75.15">
-	<meta name="ICBM" content="6.2333, -75.15">
+	<meta name="geo.position" content="6.2328;-75.1575">
+	<meta name="ICBM" content="6.2328, -75.1575">
 
-	<!-- Open Graph Meta Tags for Social Sharing -->
-	<meta property="og:title" content="{{ .Title | default .Site.Title }}">
-	<meta property="og:description" content="{{ i18n "metaDescription" }}">
-	<meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.jpg">
-	<meta property="og:url" content="{{ .Permalink }}">
+	<!-- Open Graph Meta Tags -->
 	<meta property="og:type" content="website">
-	<meta property="og:locale" content="{{ .Site.Language.Lang }}">
 	<meta property="og:site_name" content="{{ .Site.Title }}">
+	<meta property="og:title" content="{{ i18n "seoTitle" }}">
+	<meta property="og:description" content="{{ i18n "metaDescription" }}">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:image" content="{{ .Site.BaseURL }}images/casadodo/casadodofront1440-90.jpg">
+	<meta property="og:image:width" content="1440">
+	<meta property="og:image:alt" content="Front view of Casa Dodo Guatapé boutique apartments">
+	{{ if eq .Site.Language.Lang "en" }}<meta property="og:locale" content="en_US">
+	{{ else if eq .Site.Language.Lang "es" }}<meta property="og:locale" content="es_CO">
+	{{ else if eq .Site.Language.Lang "fr" }}<meta property="og:locale" content="fr_FR">
+	{{ end }}
+	<meta property="og:locale:alternate" content="en_US">
+	<meta property="og:locale:alternate" content="es_CO">
+	<meta property="og:locale:alternate" content="fr_FR">
 
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+	<meta name="twitter:title" content="{{ i18n "seoTitle" }}">
 	<meta name="twitter:description" content="{{ i18n "metaDescription" }}">
-	<meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-image.jpg">
+	<meta name="twitter:image" content="{{ .Site.BaseURL }}images/casadodo/casadodofront1440-90.jpg">
 
-	<meta name="author" content="">
+	<!-- hreflang Tags -->
+	{{ range .Sites }}
+		<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
+	{{ end }}
+	<link rel="alternate" hreflang="x-default" href="https://casadodoguatape.com/" />
 
 	<!-- CSS -->
 	{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
@@ -45,7 +57,7 @@
 
 	{{ $own := resources.Get "css/own.css" | fingerprint }}
 	<link rel="stylesheet" href="{{ $own.RelPermalink }}">
-	
+
 	<!-- LobbyPMS Widget -->
 	<link rel="stylesheet" href="https://app.lobbypms.com/public/css/widget/lobby-date-rage-selector.min.css?v=Qg0D6AUdmG6FDKdTEFkPSzVIQ">
 	<script src="https://app.lobbypms.com/public/js/widget/lobby-date-rage-selector.min.js?v=2Q71t2sfSSopafxCqKhda5yBR"></script>
@@ -57,22 +69,20 @@
 		});
 	</script>
 
-	<!-- hreflang Tags -->
-	{{ range .Sites }}
-		<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Home.Permalink }}" />
-	{{ end }}
-
-
-	
+	<!-- Structured Data: LodgingBusiness -->
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": "Hotel",
+			"@type": "LodgingBusiness",
 			"name": "Casa Dodo Guatapé",
-			"url": "https://casadodoguatape.com/",
+			"url": "https://casadodoguatape.com",
 			"logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
-			"image": "{{ .Site.BaseURL }}images/og-image.jpg",
+			"image": [
+				"https://casadodoguatape.com/images/casadodo/casadodofront1440-90.jpg"
+			],
 			"description": "{{ i18n "metaDescription" | safeJS }}",
+			"telephone": "+573137317997",
+			"email": "casadodoguatape@gmail.com",
 			"address": {
 				"@type": "PostalAddress",
 				"streetAddress": "Carrera 32 Calle 31-28",
@@ -82,38 +92,37 @@
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "6.2333",
-				"longitude": "-75.15"
+				"latitude": 6.2328,
+				"longitude": -75.1575
 			},
-			"telephone": "+57 313 731-7997",
 			"priceRange": "$$",
-			"openingHours": "24/7",
+			"starRating": {
+				"@type": "Rating",
+				"ratingValue": "4"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "9.8",
+				"bestRating": "10",
+				"ratingCount": "219",
+				"reviewCount": "219"
+			},
 			"amenityFeature": [
-				{
-					"@type": "LocationFeatureSpecification",
-					"name": "Free WiFi",
-					"value": true
-				},
-				{
-					"@type": "LocationFeatureSpecification",
-					"name": "Restaurant",
-					"value": true
-				},
-				{
-					"@type": "LocationFeatureSpecification",
-					"name": "Complimentary Breakfast",
-					"value": true
-				},
-				{
-					"@type": "LocationFeatureSpecification",
-					"name": "Coffee",
-					"value": true
-				},
-				{
-					"@type": "LocationFeatureSpecification",
-					"name": "Kitchen Available",
-					"value": true
-				}
+				{ "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+				{ "@type": "LocationFeatureSpecification", "name": "Complimentary Breakfast", "value": true },
+				{ "@type": "LocationFeatureSpecification", "name": "Fully Equipped Kitchen", "value": true },
+				{ "@type": "LocationFeatureSpecification", "name": "Lake View", "value": true },
+				{ "@type": "LocationFeatureSpecification", "name": "Laundry Facilities", "value": true }
+			],
+			"checkinTime": "15:00",
+			"checkoutTime": "12:00",
+			"numberOfRooms": 3,
+			"petsAllowed": true,
+			"sameAs": [
+				"https://www.instagram.com/casadodoguatape/",
+				"https://www.facebook.com/casadodoguatape",
+				"https://www.booking.com/hotel/co/casa-dodo-guatape-guatape.html",
+				"https://www.tripadvisor.com/Hotel_Review-g1087551-d21372489-Reviews-Casa_Dodo_Guatape-Guatape_Antioquia_Department.html"
 			],
 			"containsPlace": [
 				{
@@ -121,21 +130,10 @@
 					"name": "Apartment 201",
 					"description": "2-bedroom apartment with 2 bathrooms, kitchen, living area, and balcony. Sleeps 4 guests.",
 					"bed": [
-						{
-							"@type": "BedDetails",
-							"typeOfBed": "Double",
-							"numberOfBeds": 1
-						},
-						{
-							"@type": "BedDetails",
-							"typeOfBed": "Small Double (Trundle)",
-							"numberOfBeds": 1
-						}
+						{ "@type": "BedDetails", "typeOfBed": "Double", "numberOfBeds": 1 },
+						{ "@type": "BedDetails", "typeOfBed": "Small Double (Trundle)", "numberOfBeds": 1 }
 					],
-					"occupancy": {
-						"@type": "QuantitativeValue",
-						"value": 4
-					},
+					"occupancy": { "@type": "QuantitativeValue", "value": 4 },
 					"amenityFeature": [
 						{ "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true },
 						{ "@type": "LocationFeatureSpecification", "name": "Balcony", "value": true },
@@ -147,16 +145,9 @@
 					"name": "Apartment 202",
 					"description": "1-bedroom apartment with en-suite bathroom, large kitchen with breakfast bar, and private patio. Sleeps 2 guests.",
 					"bed": [
-						{
-							"@type": "BedDetails",
-							"typeOfBed": "Double",
-							"numberOfBeds": 1
-						}
+						{ "@type": "BedDetails", "typeOfBed": "Double", "numberOfBeds": 1 }
 					],
-					"occupancy": {
-						"@type": "QuantitativeValue",
-						"value": 2
-					},
+					"occupancy": { "@type": "QuantitativeValue", "value": 2 },
 					"amenityFeature": [
 						{ "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true },
 						{ "@type": "LocationFeatureSpecification", "name": "Patio", "value": true },
@@ -168,21 +159,10 @@
 					"name": "Apartment 301",
 					"description": "3-bedroom apartment with 3 bathrooms, large kitchen, dining area, living and work space, and balcony. Sleeps 6 guests.",
 					"bed": [
-						{
-							"@type": "BedDetails",
-							"typeOfBed": "Double",
-							"numberOfBeds": 2
-						},
-						{
-							"@type": "BedDetails",
-							"typeOfBed": "Small Double",
-							"numberOfBeds": 1
-						}
+						{ "@type": "BedDetails", "typeOfBed": "Double", "numberOfBeds": 2 },
+						{ "@type": "BedDetails", "typeOfBed": "Small Double", "numberOfBeds": 1 }
 					],
-					"occupancy": {
-						"@type": "QuantitativeValue",
-						"value": 6
-					},
+					"occupancy": { "@type": "QuantitativeValue", "value": 6 },
 					"amenityFeature": [
 						{ "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true },
 						{ "@type": "LocationFeatureSpecification", "name": "Balcony", "value": true },

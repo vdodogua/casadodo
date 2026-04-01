@@ -2,11 +2,11 @@
 bookNow: "Book Now"
 bookNowLink: "https://book.casadodoguatape.com/casa-dodo-guatap-?lang=GB"
 
-metaDescription: "Experience the charm of Guatapé at Casa Dodo, a centrally located boutique hotel offering modern comfort and exceptional service."
-metaKeywords: "Guatapé hotel, Casa Dodo, boutique hotel, Guatapé accommodation, Colombian hospitality, central location"
+metaDescription: "Stay at Casa Dodo Guatapé — 3 stylish, fully-equipped apartments with lake views, complimentary breakfast, and free WiFi. Steps from the main square. Rated 9.8 on Booking.com. Book direct."
+metaKeywords: "boutique hotel guatapé, apartments guatapé colombia, guatapé lake view accommodation, where to stay guatapé, casa dodo guatapé, family apartment guatapé with kitchen"
 
 # banner
-banner.title: "Style & Comfort in Guatapé"
+banner.title: "Boutique Apartments in the Heart of Guatapé"
 banner.subtitle: "Enjoy home-away-from-home hospitality at Casa Dodo."
 # banner.content: >
 #   Nestled in the heart of Guatapé, we blend modern comfort with local charm.
@@ -57,12 +57,15 @@ amenity_patio: "Patio"
 amenity_sleeps: "Sleeps"
 
 #apartments
+spotlight1_alt: "Apartment 201 — modern 2-bedroom apartment in Casa Dodo Guatapé"
 spotlight1_title: "Apartment 201"
 spotlight1_content: "Whether you are a family of four or two friends, this apartment is suitable for you. It features two bedrooms and two bathrooms, a compact but functional kitchen, living and dining areas. One bedroom features a double bed with en-suite bathroom, the other has a small double (120cm) trundle bed with its own but separate bathroom. The apartment has three small balconies facing the lake."
 
+spotlight2_alt: "Apartment 202 — cozy 1-bedroom apartment with patio in Casa Dodo Guatapé"
 spotlight2_title: "Apartment 202"
 spotlight2_content: "Perfect for a single person or for a couple, this apartment has a double bedroom with en-suite bathroom, a large kitchen with breakfast bar and a sitting area. Although it does not have a balcony, it has a patio where you can chill and enjoy a delicious cup of Colombian coffee or a glass of wine."
 
+spotlight3_alt: "Apartment 301 — spacious 3-bedroom apartment with lake view balcony in Guatapé"
 spotlight3_title: "Apartment 301"
 spotlight3_content: "With three bedrooms and three bathrooms, up to six people can comfortably stay here. Two bedrooms have a double bed each and en-suite bathrooms, the third bedroom has a small double bed (120cm) and its own but separate bathroom. A large kitchen will allow you to prepare meals for everyone. It has a six-seater dining table and a living and work space.  The apartment has three small balconies overlooking the lake."
 
@@ -104,7 +107,7 @@ thankYou_questions: "Have questions? Reach out anytime:"
 thankYou_backHome: "Back to Casa Dodo"
 
 # SEO
-seoTitle: "Casa Dodo Guatape — Boutique Hotel & Apartments"
+seoTitle: "Casa Dodo Guatapé — Boutique Apartments with Lake View | Guatapé, Colombia"
 
 # FAQ Schema
 faq_q_location: "Where is Casa Dodo located?"

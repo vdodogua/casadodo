@@ -322,7 +322,7 @@ defaultContentLanguageInSubdir = false
       thumb = "/images/casadodo/thumbs/301.bathroom3.1.thumb.jpg"
       alt = "Bathroom 3 Apartment 301"
     [[Params.gallery301.pictures]]
-      src = "/images/casadodo/301/301.bathoom3.2.jpg"
+      src = "/images/casadodo/301/301.bathroom3.2.jpg"
       thumb = "/images/casadodo/thumbs/301.bathroom3.2.thumb.jpg"
       alt = "Bathroom 3 Apartment 301"
     [[Params.gallery301.pictures]]
