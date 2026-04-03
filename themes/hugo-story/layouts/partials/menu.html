@@ -4,23 +4,28 @@
             <img src="{{ .Site.Params.logo | relURL }}" alt="Logo">
         </div>
         <div class="menu-right">
-            <div class="language-switcher">
-                {{ $currentLang := $.Site.Language.Lang }}
-                {{ range .Site.Languages }}
-                    {{ if ne $currentLang .Lang }}
-                        <a href="{{ printf "/%s/" .Lang }}">
-                            <img src="{{ printf "/images/flags/%s.png" .Lang | relURL }}" alt="{{ .LanguageName }} flag" class="flag-icon">
-                            <span>{{ .Lang }}</span>
-                        </a>
+            <div class="menu-group">
+                <div class="language-switcher">
+                    {{ $currentLang := $.Site.Language.Lang }}
+                    {{ range .Site.Languages }}
+                        {{ if ne $currentLang .Lang }}
+                            <a href="{{ printf "/%s/" .Lang }}">
+                                <img src="{{ printf "/images/flags/%s.png" .Lang | relURL }}" alt="{{ .LanguageName }} flag" class="flag-icon">
+                                <span>{{ .Lang }}</span>
+                            </a>
+                        {{ end }}
                     {{ end }}
-                {{ end }}
+                </div>
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="hamburger" aria-label="Menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
+            <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">
+                <i class="fas fa-calendar-check book-now-icon"></i>
+                <span class="book-now-text">{{ i18n "bookNow" }}</span>
+            </a>
         </div>
     </div>
     <div class="menu-dropdown">

@@ -29,16 +29,15 @@
                     {{ end }}
                     {{ if not $inMosaic }}
                     <article style="display:none">
-                        <a href="{{ $pic.src | relURL }}" class="image">
-                            <img src="{{ $pic.thumb | relURL }}" alt="{{ $pic.alt }}" loading="lazy" />
-                        </a>
+                        <a href="{{ $pic.src | relURL }}" class="image"></a>
                     </article>
                     {{ end }}
                 {{ end }}
             {{ else }}
                 {{- /* Fallback: first 5 images */ -}}
                 {{ range $i, $pic := $pictures }}
-                <article{{ if eq $i 0 }} class="mosaic-hero"{{ else if lt $i 5 }} class="mosaic-thumb"{{ end }}{{ if ge $i 5 }} style="display:none"{{ end }}>
+                {{ if lt $i 5 }}
+                <article{{ if eq $i 0 }} class="mosaic-hero"{{ else }} class="mosaic-thumb"{{ end }}>
                     <a href="{{ $pic.src | relURL }}" class="image">
                         <img src="{{ if eq $i 0 }}{{ $pic.src | relURL }}{{ else }}{{ $pic.thumb | relURL }}{{ end }}" alt="{{ $pic.alt }}" loading="lazy" />
                     </a>
@@ -46,6 +45,11 @@
                         <span class="mosaic-more">+{{ sub $total 5 }} photos</span>
                     {{ end }}
                 </article>
+                {{ else }}
+                <article style="display:none">
+                    <a href="{{ $pic.src | relURL }}" class="image"></a>
+                </article>
+                {{ end }}
                 {{ end }}
             {{ end }}
         </div>
