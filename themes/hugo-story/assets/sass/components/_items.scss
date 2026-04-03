@@ -109,7 +109,7 @@
 
 			// Size.
 				@include items-style1-size(big, 2, _size(gutter));
-				@include items-style1-size(medium, 3, _size(gutter) * 0.625);
+				@include items-style1-size(medium, 4, _size(gutter) * 0.625);
 				@include items-style1-size(small, 4, _size(gutter) * 0.375);
 
 				@include breakpoint('<=large') {
@@ -118,7 +118,7 @@
 				}
 
 				@include breakpoint('<=medium') {
-					@include items-style1-size-reset(medium, 3);
+					@include items-style1-size-reset(medium, 4);
 					@include items-style1-size(medium, 2, _size(gutter));
 
 					@include items-style1-size-reset(small, 3);

@@ -56,7 +56,8 @@ defaultContentLanguageInSubdir = false
   [Params.icons]
     icon1 = "fa-home" 
     icon2 = "fa-camera-retro"
-    icon3 = "fa-concierge-bell" 
+    icon3 = "fa-concierge-bell"
+    icon4 = "fa-paw"
 
   
   [Params.social]
