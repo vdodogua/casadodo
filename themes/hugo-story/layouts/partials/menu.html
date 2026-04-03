@@ -15,7 +15,37 @@
                     {{ end }}
                 {{ end }}
             </div>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>
         </div>
     </div>
+    <div class="menu-dropdown">
+        <a href="#apartment-201">{{ i18n "spotlight1_title" }}</a>
+        <a href="#apartment-202">{{ i18n "spotlight2_title" }}</a>
+        <a href="#apartment-301">{{ i18n "spotlight3_title" }}</a>
+        <a href="#about">{{ i18n "spotlight4_title" }}</a>
+        <a href="#location">{{ i18n "location_title" }}</a>
+    </div>
 </nav>
+<script>
+(function(){
+    var btn = document.querySelector('.hamburger');
+    var menu = document.querySelector('.menu-dropdown');
+    btn.addEventListener('click', function(){
+        var open = menu.classList.toggle('open');
+        btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+    });
+    menu.addEventListener('click', function(e){
+        if(e.target.tagName === 'A'){
+            menu.classList.remove('open');
+            btn.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+        }
+    });
+})();
+</script>

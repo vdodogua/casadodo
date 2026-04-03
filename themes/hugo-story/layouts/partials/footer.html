@@ -9,6 +9,19 @@
             <!-- {{ with .Site.Params.social.linkedin }}<li><a target="_blank" href="{{.}}" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>{{end}} -->
             <!-- {{ with .Site.Params.social.email }}<li><a target="_blank" href="mailto:{{.}}" class="fav icon style2 fa-envelope"><span class="label">Email</span></a></li>{{end}} -->
         </ul>
+        <nav class="footer-nav">
+            <a href="#apartment-201">{{ i18n "spotlight1_title" }}</a>
+            <a href="#apartment-202">{{ i18n "spotlight2_title" }}</a>
+            <a href="#apartment-301">{{ i18n "spotlight3_title" }}</a>
+            <a href="#about">{{ i18n "spotlight4_title" }}</a>
+            <a href="#location">{{ i18n "location_title" }}</a>
+            <a href="#directions">{{ i18n "directions_title" }}</a>
+        </nav>
+        <nav class="footer-lang">
+            {{ range $.Site.Languages }}
+            <a href="{{ printf "/%s/" .Lang }}">{{ .LanguageName }}</a>
+            {{ end }}
+        </nav>
         <p>
             &copy; Casa Dodo {{ now.Format "2006" }}. All rights reserved.     
             &nbsp;&nbsp;&nbsp; <i class="fa fa-code" style="color: #606060"></i>

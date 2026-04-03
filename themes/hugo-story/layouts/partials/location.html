@@ -9,7 +9,10 @@
             <i class="fas "></i> &nbsp;{{ .country }}<br>
         </p>
         <p>
-            <i class="fas fa-envelope"></i>  &nbsp; <a href="mailto:{{ .email }}">{{ .email }}</a><br>
+            <i class="fas fa-envelope"></i>  &nbsp; <span id="contact-email"></span><br>
+<script>
+(function(){var u='casadodoguatape',d='gmail.com',e=u+'@'+d,s=document.getElementById('contact-email');s.innerHTML='<a href="mailto:'+e+'">'+e+'</a>';})();
+</script>
             <i class="fas fa-phone"></i> &nbsp; <a href="tel:{{ .phone }}">{{ .phone }}</a>
         </p>        <!-- <ul class="action">
             <a href="{{ i18n "bookNowLink" }}" class="book-now-button" target="_blank">{{ i18n "bookNow" }}</a>

@@ -782,3 +782,84 @@
     gap: 0.5rem;
     margin-top: 1rem;
 }
+
+/* =============================================
+   Footer Navigation
+   ============================================= */
+.footer-nav, .footer-lang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.footer-nav a, .footer-lang a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.footer-nav a:hover, .footer-lang a:hover {
+    opacity: 1;
+}
+
+/* =============================================
+   Hamburger Menu
+   ============================================= */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 1rem;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    border-radius: 1px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Dropdown panel */
+.menu-dropdown {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    background: #ffffff;
+    padding: 0 20px;
+}
+.menu-dropdown.open {
+    max-height: 300px;
+}
+.menu-dropdown a {
+    padding: 0.6rem 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+.menu-dropdown a:last-child {
+    border-bottom: none;
+}
+.menu-dropdown a:hover {
+    opacity: 0.7;
+}
