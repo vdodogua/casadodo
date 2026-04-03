@@ -230,21 +230,78 @@
 
 .ratings-section {
     text-align: center;
-    /* margin: 40px 0; */
-    padding: 40px 0;
+    padding: 1.5rem 0;
 }
 
-.ratings-images {
+.ratings-cards {
     display: flex;
-    justify-content: center; /* Centers the images horizontally */
-    align-items: center;     /* Centers images vertically if heights vary */
-    gap: 20px;               /* Adds space between images */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
-.ratings-images img {
-    height: 100px;           /* Sets a consistent height */
-    width: auto;             /* Maintains aspect ratio */
+.rating-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: opacity 0.2s ease;
 }
+
+.rating-card:hover {
+    opacity: 0.9;
+}
+
+.rating-platform {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+}
+
+.rating-metric {
+    font-size: 1.3rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.rating-card strong,
+.rating-card .rating-metric,
+.rating-card .rating-platform,
+.rating-card .rating-reviews,
+.rating-card .rating-detail {
+    color: #fff;
+}
+
+.rating-metric strong {
+    font-weight: 700;
+}
+
+.rating-metric-sub {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+}
+
+.rating-detail {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.rating-reviews {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Brand colors */
+.rating-booking { background: #003580; }
+.rating-airbnb { background: #FF5A5F; }
+.rating-kayak { background: #2E2E2E; }
 
 
 .whatsapp-button {
@@ -271,16 +328,9 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .ratings-images {
-      flex-direction: column; /* Stacks images vertically */
-  }
-
-  .ratings-images img {
-      margin-bottom: 20px;    /* Adds space between stacked images */
-  }
-
-  .ratings-images img:last-child {
-      margin-bottom: 0;       /* Removes margin from the last image */
+  .ratings-cards {
+      flex-wrap: wrap;
+      gap: 0.5rem;
   }
   .whatsapp-button img {
     width: 50px;
