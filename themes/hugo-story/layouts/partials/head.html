@@ -19,9 +19,10 @@
 	<meta property="og:title" content="{{ i18n "seoTitle" }}">
 	<meta property="og:description" content="{{ i18n "metaDescription" }}">
 	<meta property="og:url" content="{{ .Permalink }}">
-	<meta property="og:image" content="{{ .Site.BaseURL }}images/casadodo/casadodofront1440-90.jpg">
-	<meta property="og:image:width" content="1440">
-	<meta property="og:image:alt" content="Front view of Casa Dodo Guatapé boutique apartments">
+	<meta property="og:image" content="{{ .Site.BaseURL }}images/casadodo/casadodofullside.jpg">
+	<meta property="og:image:width" content="2560">
+	<meta property="og:image:height" content="1772">
+	<meta property="og:image:alt" content="Casa Dodo Guatapé boutique apartments with lake panorama view">
 	{{ if eq .Site.Language.Lang "en" }}<meta property="og:locale" content="en_US">
 	{{ else if eq .Site.Language.Lang "es" }}<meta property="og:locale" content="es_CO">
 	{{ else if eq .Site.Language.Lang "fr" }}<meta property="og:locale" content="fr_FR">
@@ -34,7 +35,7 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{{ i18n "seoTitle" }}">
 	<meta name="twitter:description" content="{{ i18n "metaDescription" }}">
-	<meta name="twitter:image" content="{{ .Site.BaseURL }}images/casadodo/casadodofront1440-90.jpg">
+	<meta name="twitter:image" content="{{ .Site.BaseURL }}images/casadodo/casadodofullside.jpg">
 
 	<!-- hreflang Tags -->
 	{{ range .Sites }}
@@ -78,7 +79,7 @@
 			"url": "https://casadodoguatape.com",
 			"logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
 			"image": [
-				"https://casadodoguatape.com/images/casadodo/casadodofront1440-90.jpg"
+				"https://casadodoguatape.com/images/casadodo/casadodofullside.jpg"
 			],
 			"description": "{{ i18n "metaDescription" | safeJS }}",
 			"telephone": "+573137317997",
